@@ -1,0 +1,13 @@
+.cv {
+    border: 2px solid white;
+    border-radius: 10px;
+    background: black;
+    width: min-content;
+    height: 30px;
+    color: white;
+    font-size: 12px;
+}
+
+.cv-text:hover, .cv:hover {
+    cursor: pointer;
+}

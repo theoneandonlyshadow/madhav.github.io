@@ -1,0 +1,17 @@
+{
+    "commands": {
+        "help": "Displays list of commands",
+        "linkedin": "https://www.linkedin.com/in/madhav-nair-5310a6251/",
+        "outlook": "madhavnair700@outlook.com",
+        "gmail": "madhavnair700@gmail.com",
+        "whoami": "You are a valued viewer! <3",
+        "echo": "cant echo just yet",
+        "kill": "closing website",
+        "date": "displays current date and time",
+        "about": "redirect to about page",
+        "contact": "redirect to contact page",
+        "links": "redirect to links page",
+        "posts": "redirect to posts page",
+        "projects": "reidrect to projects page"
+    }
+}

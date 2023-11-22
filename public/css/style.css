@@ -1,0 +1,21 @@
+
+@font-face {
+  font-family: 'Modenine';
+  src: url('../assets/Modenine.ttf');
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+* {
+  font-family: 'Modenine', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.line{
+  bottom: 70px;
+  position: fixed;
+  width: 100%;
+}
