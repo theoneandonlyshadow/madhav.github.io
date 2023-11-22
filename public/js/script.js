@@ -94,15 +94,15 @@ projects -> reidrect to projects page\n`
         case "date":
             return `${hostnameoutput} \n${formattedDate}`
         case "about":
-            return window.location.href = '/public/about.html';
+            return window.location.href = 'public/about.html';
         case "contact":
-            return window.location.href = '/public/contact.html'
+            return window.location.href = 'public/contact.html'
         case "links":
-            return window.location.href = '/public/links.html'
+            return window.location.href = 'public/links.html'
         case "posts":
-            return window.location.href = '/public/posts.html'
+            return window.location.href = 'public/posts.html'
         case "projects":
-            return window.location.href = '/public/project.html'
+            return window.location.href = 'public/projects.html'
         default:
             return `'${command.includes(" ") ? command.split(" ")[0] : command}' is not recognized as an internal or external command.`
     }
