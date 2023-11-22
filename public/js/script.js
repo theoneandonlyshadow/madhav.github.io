@@ -94,9 +94,9 @@ projects -> reidrect to projects page\n`
         case "date":
             return `${hostnameoutput} \n${formattedDate}`
         case "about":
-            return window.location.href = 'public/about.html';
+            return window.location.href = './public/about.html';
         case "contact":
-            return window.location.href = 'public/contact.html'
+            return window.location.href = './public/contact.html'
         case "links":
             return window.location.href = 'public/links.html'
         case "posts":
