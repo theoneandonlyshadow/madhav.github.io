@@ -98,11 +98,11 @@ projects -> reidrect to projects page\n`
         case "contact":
             return window.location.href = './public/contact.html'
         case "links":
-            return window.location.href = 'public/links.html'
+            return window.location.href = './public/links.html'
         case "posts":
-            return window.location.href = 'public/posts.html'
+            return window.location.href = './public/posts.html'
         case "projects":
-            return window.location.href = 'public/projects.html'
+            return window.location.href = './public/projects.html'
         default:
             return `'${command.includes(" ") ? command.split(" ")[0] : command}' is not recognized as an internal or external command.`
     }
