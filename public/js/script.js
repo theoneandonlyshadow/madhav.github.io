@@ -67,18 +67,18 @@ const parse = async (command) => {
     switch (command) {
         case "help":
             return `${hostnameoutput} \nhelp -> Displays list of commands\n
-            linkedin -> displays Linkedin profile URL\n
-            outlook -> displays outlook addres & URL\n
-            gmail -> displays gmail address & URL\n
-            whoami -> who are you??\n
-            echo -> repeats your input\n
-            kill -> closes website\n
-            date -> displays current date and time\n
-            about -> redirect to about page\n
-            contact -> redirect to contact page\n
-            links -> redirect to links page\n
-            posts -> redirect to posts page\n
-            projects -> reidrect to projects page\n`
+linkedin -> displays Linkedin profile URL\n
+outlook -> displays outlook addres & URL\n
+gmail -> displays gmail address & URL\n
+whoami -> who are you??\n
+echo -> repeats your input\n
+kill -> closes website\n
+date -> displays current date and time\n
+about -> redirect to about page\n
+contact -> redirect to contact page\n
+links -> redirect to links page\n
+posts -> redirect to posts page\n
+projects -> reidrect to projects page\n`
         case "linkedin":
             return `${hostnameoutput} \nhttps://www.linkedin.com/in/madhav-nair-5310a6251/`
         case "outlook":

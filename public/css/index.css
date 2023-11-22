@@ -35,7 +35,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow: scroll;
     max-height: 500px;
     font-size: 15px;
 }
