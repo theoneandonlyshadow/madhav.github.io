@@ -71,13 +71,13 @@ linkedin -> displays Linkedin profile URL\n
 outlook -> displays outlook addres & URL\n
 gmail -> displays gmail address & URL\n
 whoami -> who are you??\n
-echo -> repeats your input\n
 kill -> closes website\n
 date -> displays current date and time\n
 about -> redirect to about page\n
 contact -> redirect to contact page\n
 links -> redirect to links page\n
 posts -> redirect to posts page\n
+maxtac -> redirect to maxtac page\n
 projects -> reidrect to projects page\n`
         case "linkedin":
             return `${hostnameoutput} \nhttps://www.linkedin.com/in/madhav-nair-5310a6251/`
@@ -86,11 +86,9 @@ projects -> reidrect to projects page\n`
         case "gmail":
             return `${hostnameoutput} \nmadhavnair700@gmail.com`
         case "kill":
-            return `${hostnameoutput} \nexiting window in 5 seconds. Have a nice day.`
+            return window.close()
         case "whoami":
             return `${hostnameoutput} \nYou are a valued viewer! <3`
-        case "echo":
-            return `${hostnameoutput} \ncant echo just yet`
         case "date":
             return `${hostnameoutput} \n${formattedDate}`
         case "about":
@@ -101,6 +99,8 @@ projects -> reidrect to projects page\n`
             return window.location.href = './public/links.html'
         case "posts":
             return window.location.href = './public/posts.html'
+        case "maxtac":
+            return window.location.href = './public/MaxTac.html'
         case "projects":
             return window.location.href = './public/projects.html'
         default:
