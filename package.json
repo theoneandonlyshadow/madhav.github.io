@@ -10,6 +10,7 @@
   "author": "madhav",
   "license": "MIT",
   "dependencies": {
+    "@coreui/icons": "^3.0.1",
     "nodemon": "^3.0.1"
   }
 }
