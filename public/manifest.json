@@ -1,0 +1,22 @@
+{
+    "name": "Portfolio of Madhav Nair",
+    "short_name": "Madhav Nair",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#000000",
+    "description": "Portfolio of Madhav Nair",
+    "icons": [
+      {
+        "src": "assets/icon.png",
+        "sizes": "48x48",
+        "type": "image/png"
+      }
+    ],
+    "related_applications": [
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/theoneandonlyshadow"
+      }
+    ]
+  }
+  

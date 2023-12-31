@@ -1,9 +1,15 @@
+<!DOCTYPE html>
 <html>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>MaxTac | Madhav Nair</title>
   <link rel="stylesheet" href="./css/MaxTac.css" />
+  <link rel="stylesheet" href="./css/toast.css" />
+  <script src="../server.js"></script>
   <body>
+    <script src="../server.js"></script>
+    
     <header>
+      
       <a href="#" class="logo"><span color="00ffff">Max</span><span color="#1B71FA">Tac</span> by Madhav</a>
       <div class="bx bx-menu" id="menu-icon"></div>
       <ul class="navbar">
@@ -14,7 +20,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <ul class="return-back">
-        <li><a href="https://github.com">
+        <li><a href="https://madhavdotjs.netlify.app/">
           <span> </span>
           <span> </span>
           <span> </span>
@@ -25,7 +31,17 @@
           <span> </span>
           Return Back</a></li>
       </ul>
+      <div class="col-sm-12">
+        <div class="alert fade alert-simple alert-warning alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show" role="alert" data-brk-library="component__alert">
+          <button type="button" class="close font__size-18" data-dismiss="alert">
+                </button>
+                <i class="fa-regular fa-triangle-exclamation"></i>
+          <strong class="font__weight-semibold">MaxTac is experiencing API issues. Project is currently on hold.</strong>
+          <button onclick = "window.location.href ='./posts/MaxTac.html'">learn more</button> 
+        </div>
+      </div>
     </header>
+    
     <section class="home" id="home">
       <div class="home-text">
         <h1> MaxTac </h1>
@@ -156,6 +172,10 @@
 
             </p>  
           </div>
+          <img src="./assets/alex/alex1.png" height="400px">
+          <img src="./assets/alex/alex2.png" height="200px">
+          <img src="./assets/alex/alex3.png" height="500px">
+          <img src="./assets/alex/alex4.png" height="500px">
         </div>
         </section>
         <section class="services" id="services">
@@ -292,19 +312,15 @@
                 
                 <div class="row">
                <i class='bx bxs-bot' ></i>
-                <h3>What is the purpose of Alexandrite?</h3>
+                <h3>What is the purpose of Shadow?</h3>
                 <p> 
-                  ] Solves complex level math input
+                  ] Trains appropriate responses and latest data
                   <br>
-                  ] Returns readable output in 3 different forms
+                  ] Compares result with comparison
                   <br>
-                  ] Returns weather details
+                  ] Trains with verified datasets
                   <br>
-                  ] Returns WIKIPEDIA results
-                  <br>
-                  ] Returns word meanings
-                  <br>
-                  ] Cheat in your exams :)
+                  ] Every day is a working day :(
                 </p>  
               </div>
                   <div class="row">
@@ -313,18 +329,18 @@
                 <p>
                   ] Source code : Never
                   <br>
-                  ] Recreation process : January 2024
+                  ] Recreation process : February 2024
                   <br>
-                  ] Public release : February 2024
+                  ] Public release : June 2024
                 </p>  
               </div>
                     <div class="row">
                <i class='bx bx-code-block' ></i>
                 <h3>Dependencies</h3>
                 <p>
-                 ] wolfram-alpha-api: ^23.1004.144821-RELEASE
+                 ] balanced-match: 1.0.0
                  <br>
-                 ] wolfram-alpha-node": ^0.0.3
+                 ] binary-extensions: 2.2.0
                  <br>
                  ] axios: ^1.6.2
                 <br>
@@ -334,24 +350,28 @@
                 <br>
                  ] mongodb": ^6.1.0
                 <br>
-                 ] multer: ^1.4.5-lts.1
+                 ] brace-expansion: 1.11.11
                 <br>
                  ] nodemon: ^3.0.2
                 <br>
-                 ] sentiment: ^5.0.2
+                 ] compromise: 14.11.0
+                 <br>
+                 ] eslint: 8.53.0
                 </p>  
               </div>
                       <div class="row">
                 <i class='bx bx-collapse-horizontal'></i>
                 <h3>Testing Features</h3>
                 <p> 
-                  ] Instagram Private API
+                  ] 50-layer Residual Network
                   <br>
-                  ] Whatsapp API
+                  ] MNIST: Basic Convnet
                   <br>
-                  ] Telegram API
+                  ] Inception v3
                   <br>
-                  ] Slack API
+                  ] DenseNet-121
+                  <br>
+                  ] SqueezeNet v1.1
                   <br>
                   ] Stemmer Algorithm
                   <br>
@@ -393,53 +413,97 @@
               <h6>November 3 2023</h6>
               <h4>NiveshIQ</h4>
               <h5>Backend Python role [ Python, OCR ]</h5>
+              <h5>Offered ₹1.8L – ₹4.2L per annum</h5>
             </div>
             
             <div class="box">
               <h6>October 19 2023</h6>
               <h4>lvlAlpha</h4>
               <h5>Frontend Unpaid Role</h5>
+              <h5>Offered no money</h5>
             </div>
             
             <div class="box">
               <h6>September 29 2023</h6>
               <h4>Pixelwand</h4>
               <h5>Fullstack role [ Node.js, Slack API ]</h5>
+              <h5>Offered ₹15k – ₹35k per month</h5>
             </div>
             
             <div class="box">
               <h6>October 3 2023</h6>
               <h4>HappilyEver</h4>
               <h5>Frontend & Backend role [ REST API, PostgreSQL ]</h5>
+              <h5>Offered ₹10k per month</h5>
             </div>
             
             <div class="box">
               <h6>September 29 2023</h6>
               <h4>BTST Technologies</h4>
               <h5>Backend role [ REST API ]</h5>
+              <h5>Offered ₹7k per month</h5>
             </div>
 
             <div class="box">
               <h6>September 21 2023</h6>
               <h4>Muted News</h4>
               <h5>Backend role [ React.js, Mock API ]</h5>
+              <h5>Offered ₹20k per month</h5>
             </div>
           </div>
         </section>
          <section class="contact" id="contact">
           <div class="center">
-            <h3>Internship Offers?</h3>
+            <h3>Internship Offer?</h3>
           </div>
           <div class="contact-form">
-            <form action="">
-              <input type="" placeholder="Your Name" required>
-              <input type="" placeholder="Company Name" required>
-              <input type="email" name="" id="" placeholder="Email Address" required>
-              <input type="" placeholder="Stipend per month ( in INR )" required>
-              <input type="" placeholder="Role" required>
-              <textarea name="" id="" cols="30" rows="10" placeholder="Send body message" required></textarea>
-              <input type="submit" name="" value="Send" class="send-btn">
+            <form id="maxTacForm" action="" method="post">
+              <input id="name" type="" placeholder="Your Name" required>
+              <input id="companyName" type="" placeholder="Company Name" required>
+              <input id="emailAddress" type="email" name="" id="" placeholder="Email Address" required>
+              <input id="stipend" type="" placeholder="Stipend per month ( in INR )" required>
+              <input id="role" type="" placeholder="Role" required>
+              <textarea id="message" name="" id="" cols="30" rows="10" placeholder="Send body message" required></textarea>
+              <input type="button" value="Send" class="send-btn" onclick="submitForm()">
             </form>
+
+            <script>
+              const { EmbedBuilder } = require('discord.js');
+const embed = new EmbedBuilder()
+const { Webhook } = require('discord-webhook-node');
+const hook = new Webhook("https://discord.com/api/webhooks/1185482566694862919/MJSdMZnTnAVKeGUQxZjFVxypSWV5pqt0GuuBkH3-ST-EfyZ6DYa4ABDUSgKEjHhqVVZL");
+function submitForm() {
+  const formData = {
+    name: document.getElementById('name').value,
+    companyName: document.getElementById('companyName').value,
+    emailAddress: document.getElementById('emailAddress').value,
+    stipend: document.getElementById('stipend').value,
+    role: document.getElementById('role').value,
+    message: document.getElementById('message').value
+  };
+
+  // Create a Discord embed with the form data
+  
+    embed.setTitle('Internship Application')
+    embed.addFields(
+		{ name: 'Name:', value: formData.name },
+		{ name: 'Company:', value: formData.companyName, inline: true },
+		{ name: 'Email:', value: formData.emailAddress, inline: true },
+        { name: 'Stipend', value: formData.stipend, inline: true },
+        { name: 'Role', value: formData.role, inline: true },
+        { name: 'Message', value: formData.message, inline: true },
+	)
+    embed.setColor('#10101a')
+    embed.setTimestamp();
+
+  // Send the embed to the Discord webhook
+  hook.send({ embeds: [embed] });
+
+  // Optionally, you can provide user feedback or perform other actions
+  alert('Thank you for submitting the form!');
+  console.log("shit was sent");
+}
+            </script>
           </div>
         </section>
         <div class="copyright">
