@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 
-
 let init_path = path.join(__dirname, "");
 
 const app = express();
