@@ -22,7 +22,7 @@
 }
 
 .logo-button {
-     background-color: black;
+     background-color: #0c0c0c;
      border: 0;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .prompt {
-    background-color: #000;
+    background-color: #0c0c0c;
     color: white;
     border: none;
     resize: none;
@@ -106,7 +106,7 @@
     border-radius: 4px;
     margin-top: 20px;
     position: relative;
-    background: black;
+    background: 0c0c0c;
     color: white;
     padding: 8px 14px;
     z-index: -1;

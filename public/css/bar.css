@@ -7,7 +7,7 @@
     top: 0;
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: #0c0c0c;
     z-index: 1;
 }
 
@@ -23,13 +23,13 @@
     justify-content: center;
     min-width: max-content;
     border: 0;
-    background-color: black;
+    background-color: #0c0c0c;
     color: white;
 }
 
 .topbar-button:hover {
     background-color: white;
-    color: black;
+    color: #0c0c0c;
     cursor: pointer;
 }
 
@@ -72,7 +72,7 @@
     }
     
     .topbar-button:hover {
-        background-color: black;
+        background-color: #0c0c0c;
         color: white;
     }
 
