@@ -24,6 +24,17 @@
         <script src="./public/js/script.js" defer></script>
         <link rel="manifest" href="public/manifest.json" />
     </head>
+    <script>
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+            function showAlertIfMobile() {
+            if (isMobile()) {
+                alert("Website not supported in mobile devices.");
+            }
+        }
+            window.onload = showAlertIfMobile;
+    </script>
     
     <body>
         <div class="hamburger-wrapper">
