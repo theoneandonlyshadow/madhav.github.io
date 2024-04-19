@@ -24,18 +24,6 @@
         <script src="./public/js/script.js" defer></script>
         <link rel="manifest" href="public/manifest.json" />
     </head>
-    <script>
-        function isMobile() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-            function showalert() {
-            if (isMobile()) {
-                alert("Website not supported in mobile devices.");
-            }
-        }
-            window.onload = showalert;
-    </script>
-    
     <body>
         <div class="hamburger-wrapper">
             <div class="hamburger"> 
@@ -128,6 +116,11 @@
                     <h3 class="project-title">Discord NLP Example</h3>
                     <p class="project-description">Natural Language Processing with Discord.js. Used to detect user prompts and sends processed results.</p>
                     <button onclick="window.open('https://github.com/theoneandonlyshadow/discord-nlp-example', '_blank')" class="project-button">Visit</button>
+                </div>
+                <div class="project">
+                    <h3 class="project-title">NetProbe</h3>
+                    <p class="project-description">MaxTac's very first automation system. Detects Wi-Fi connectivity.</p>
+                    <button onclick="window.open('https://github.com/theoneandonlyshadow/netprobe', '_blank')" class="project-button">Visit</button>
                 </div>
             </div>
             <hr>

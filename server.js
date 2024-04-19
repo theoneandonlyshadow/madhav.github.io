@@ -11,9 +11,7 @@ app.use(express.static(init_path));
 const hook = new Webhook("https://discord.com/api/webhooks/1185482566694862919/MJSdMZnTnAVKeGUQxZjFVxypSWV5pqt0GuuBkH3-ST-EfyZ6DYa4ABDUSgKEjHhqVVZL");
 
 app.get('/', async (req, res) => {
-  const ip = req.ip;
   res.sendFile(path.join(init_path, "index.html"));
-      await hook.send(`Visited - Index \n ${ip}`);
 });
 
 

