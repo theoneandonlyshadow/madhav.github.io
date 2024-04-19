@@ -1,23 +1,26 @@
 const express = require('express');
 const path = require('path');
+const { Webhook } = require('discord-webhook-node');
+const axios = require('axios');
 
 let init_path = path.join(__dirname, "");
 
 const app = express();
 app.use(express.static(init_path));
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(init_path, "index.html"));
-})
+const hook = new Webhook("https://discord.com/api/webhooks/1185482566694862919/MJSdMZnTnAVKeGUQxZjFVxypSWV5pqt0GuuBkH3-ST-EfyZ6DYa4ABDUSgKEjHhqVVZL");
+
+app.get('/', async (req, res) => {
+  const ip = req.ip;
+  res.sendFile(path.join(init_path, "index.html"));
+      await hook.send(`Visited - Index \n ${ip}`);
+});
+
 
 app.listen("8080", () => {
     console.log('portfolio is connected to port :: 8080');
 })
 
-// Function to submit the form data
-
-const { Webhook } = require('discord-webhook-node');
-const hook = new Webhook("https://discord.com/api/webhooks/1185482566694862919/MJSdMZnTnAVKeGUQxZjFVxypSWV5pqt0GuuBkH3-ST-EfyZ6DYa4ABDUSgKEjHhqVVZL");
 
 function submitForm() {
   var request = new XMLHttpRequest();
@@ -42,3 +45,4 @@ const formData = {
 
   request.send(JSON.stringify(params));
 }
+
