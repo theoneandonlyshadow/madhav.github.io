@@ -2,7 +2,6 @@
 
 
 # Website's Analytics
-<hr>
 191 ms  :  Scripting
 <br>
 20 ms  :  Rendering
