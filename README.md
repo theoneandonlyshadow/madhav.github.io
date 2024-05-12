@@ -4,8 +4,13 @@
 # Website's Analytics
 <hr>
 191 ms  :  Scripting
+<br>
 20 ms  :  Rendering
+<br>
 51 ms  :  Painting
+<br>
 166 ms  :  System
+<br>
 109557 ms  :  Idle
+<br>
 109985 ms  :  Total
