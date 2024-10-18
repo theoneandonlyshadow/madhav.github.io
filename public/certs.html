@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Certs | Madhav Nair</title>
+        <link rel="stylesheet" href="./css/certs.css" />
+        <link rel="stylesheet" href="./css/bar.css" />
+        <link rel="icon" href="./assets/icon.png" />
+    </head>
+    <script src="./js/certs.js"></script>
+    <body>
+        <div class="topbar">
+            <button onclick="window.location.href = '../index.html'" class="topbar-button">
+                <span class="topbar-dest">[ Home ]</span>
+            </button>
+            <button onclick="window.location.href = './about.html'" class="topbar-button">
+                <span class="topbar-dest">[ About ]</span>
+            </button>
+            <button onclick="window.location.href = './projects.html'" class="topbar-button">
+                <span class="topbar-dest">[ Projects ]</span>
+            </button>
+            <button onclick="window.location.href = '#'" class="topbar-button">
+                <span class="topbar-dest">[ Certs ]</span>
+            </button>
+            <button onclick="window.location.href = './contact.html'" class="topbar-button">
+                <span class="topbar-dest">[ Contact ]</span>
+            </button>
+            <button onclick="window.location.href = './MaxTac.html'" class="topbar-button">
+                <span class="topbar-dest">[ MaxTac ]</span>
+            </button>
+        </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="certificate-container">
+            <div class="fourrow">
+                <i class='bx bxs-bot'></i>
+                <h3>JavaScript Basic</h3>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                         <img class="modal-content" id="img01">
+                         <div id="caption"></div>
+                  </div>
+            </div>
+            <div class="fourrow" data-src="./assets/certs/js_basic.png">
+                <i class='bx bxs-bot'></i>
+                <h3>JavaScript Intermediate</h3>
+                <embed src="./assets/certs/js_interm.png" type="image"/>
+            </div>
+            <div class="fourrow" data-src="./assets/certs/js_basic.png">
+                <i class='bx bxs-bot'></i>
+                <h3>Owned Jscalc - HTB</h3>
+                <embed src="./assets/certs/jscalc_htb.png" type="image"/>
+            </div>
+            <div class="fourrow" data-src="./assets/certs/js_basic.png">
+                <i class='bx bxs-bot'></i>
+                <h3>Metasploit - HTB</h3>
+                <embed src="./assets/certs/metasploit_htb.png" type="image"/>
+            </div>
+            <div class="fourrow" data-src="./assets/certs/js_basic.png">
+                <i class='bx bxs-bot'></i>
+                <h3>NMap - HTB</h3>
+                <embed src="./assets/certs/nmap_htb.png" type="image"/>
+            </div>
+            <div class="fourrow" data-src="./assets/certs/js_basic.png">
+                <i class='bx bxs-bot'></i>
+                <h3>Owned PDFy - HTB</h3>
+                <embed src="./assets/certs/pdfy_htb.png" type="image"/>
+            </div>
+            <div class="fourrow" data-src="./assets/certs/js_basic.png">
+                <i class='bx bxs-bot'></i>
+                <h3>Web Developer Intern - Acmegrade</h3>
+                <embed src="./assets/certs/acmegrade.jpg" type="image"/>
+            </div>
+        </div>
+        <div id="cert-modal" class="modal">
+            <span id="close-modal">&times;</span>
+            <img id="modal-img" class="modal-content">
+        </div>      
+        <hr class="hr-tag">
+        <footer>
+            <div class="footer">
+                <span class="footer-text">
+                    Built with swords and guns by Madhav
+                </span>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+    fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            const ip = data.ip;
+            const content = "```Certs :: " + ip + "```";
+            const webhookURL = 'https://discord.com/api/webhooks/1185482566694862919/MJSdMZnTnAVKeGUQxZjFVxypSWV5pqt0GuuBkH3-ST-EfyZ6DYa4ABDUSgKEjHhqVVZL';
+
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ content: content })
+            });
+        })
+        .catch(error => console.error('Error:', error));
+});
+        </script>
+    </body>
+</html>

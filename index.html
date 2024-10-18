@@ -35,7 +35,7 @@
             <button onclick="window.location.href = './public/projects.html'" class="topbar-button">
                 <span class="topbar-dest">[ Projects ]</span>
             </button>
-            <button onclick="window.location.href = './public/posts.html'" class="topbar-button">
+            <button onclick="window.location.href = './public/certs.html'" class="topbar-button">
                 <span class="topbar-dest">[ Certs ]</span>
             </button>
             <button onclick="window.location.href = './public/contact.html'" class="topbar-button">
@@ -46,6 +46,12 @@
             </button>
         </div>
         <br>
+        <script>
+            var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+            if (mobile) {
+                window.location.href = './public/404/mobile.html';              
+            }
+        </script>
         <div class="bio">
             <h1>Hi, I'm Madhav</h1>
             <p>The Greatest Backend developer of All Time</p>
