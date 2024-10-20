@@ -6,7 +6,13 @@
   <link rel="stylesheet" href="./css/toast.css" />
   <script src="../server.js"></script>
   <script src="./js/MaxTac.js"></script>
-  <body>    
+  <body>
+    <script>
+      var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+      if (mobile) {
+          window.location.href = './public/404/mobile.html';              
+      }
+  </script>
     <header>
       <a href="#" class="logo"><span color="00ffff">Max</span><span color="#1B71FA">Tac</span> by Madhav</a>
       <div class="bx bx-menu" id="menu-icon"></div>

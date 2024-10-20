@@ -28,11 +28,12 @@
                 <span class="topbar-dest">[ MaxTac ]</span>
             </button>
         </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <script>
+            var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+            if (mobile) {
+                window.location.href = './public/404/mobile.html';              
+            }
+        </script>
         </div>
         <br>
          <div class="header">
