@@ -307,10 +307,10 @@ form textarea{
   padding: 20px;
   border: none;
   outline: none;
-  background: #000000;
+  background: #000;
   color: var(--white);
   margin-bottom: 0.5rem;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 form input::placeholder,
 form textarea::placeholder{

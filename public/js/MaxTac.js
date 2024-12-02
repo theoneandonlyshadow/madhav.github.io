@@ -14,3 +14,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
       })
       .catch(error => console.error('Error:', error));
 });
+
+const container = document.getElementById('pay');
+          const button = googlePayClient.createButton({
+            buttonColor: 'black',
+            buttonType: 'donate',
+            buttonRadius: 7,
+            buttonSizeMode: 'fill',
+            onClick: () => {},
+            allowedPaymentMethods: []
+          });
+          
+          container.appendChild(button);

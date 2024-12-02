@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./css/toast.css" />
   <script src="../server.js"></script>
   <script src="./js/MaxTac.js"></script>
+  <script async src="https://pay.google.com/gp/p/js/pay.js"></script>
   <body>
     <script>
       var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
@@ -396,8 +397,8 @@
      <section class="cta">
        <h4> Buy me a coffee?</h4>
        <h2> It keeps me going!</h2>
-       <a href="https://ko-fi.com/madhavnair" class="btn">CLICK ME</a>
-        </section>
+       <a  id="pay" class="btn">CLICK ME</a>
+      </section>
         <section class="resume" id="resume">
           <div class="center">
             <h3>Internship Offers</h3>
@@ -453,6 +454,7 @@
             </div>
           </div>
         </section>
+        
          <section class="contact" id="contact">
           <div class="center">
             <h3>Internship Offer?</h3>
