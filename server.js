@@ -38,7 +38,7 @@ const formData = {
   var params = {
     username: "Internship Request",
     avatar_url: "http://i.ytimg.com/vi/dXyzySHX4h8/maxresdefault.jpg",
-    content: `Name: ${formData.name} \n Company Name: ${formData.companyName} \n Email: ${formData.emailAddress} \n Stipend: ${formData.stipend} \n Role: ${formData.role} \n Message: ${formData.message} \n ||<@687622268037365774>||`
+    content: `Name: ${formData.name} \n Company Name: ${formData.companyName} \n Email: ${formData.emailAddress} \n Stipend: ${formData.stipend} \n Role: ${formData.role} \n Message: ${formData.message} \n`
   }
 
   request.send(JSON.stringify(params));
