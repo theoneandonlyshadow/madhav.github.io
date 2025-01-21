@@ -16,7 +16,7 @@ app.get('/', async (req, res) => {
 
 
 app.listen("8080", () => {
-    console.log('portfolio is connected to port :: 8080');
+    console.log('portfolio is connected :: http://localhost:8080');
 })
 
 
