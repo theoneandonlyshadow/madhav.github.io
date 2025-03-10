@@ -1778,7 +1778,7 @@ const HeroSection = ()=>{
                             className: "relative inline-block px-4 sm:px-0",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl blur-xl opacity-75"
+                                    className: "absolute -inset-1 bg-gradient-to-r from-cyan-700 via-cyan-700 to-cyan-700 rounded-2xl blur-xl opacity-75"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/HeroSection.tsx",
                                     lineNumber: 40,
