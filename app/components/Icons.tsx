@@ -231,8 +231,8 @@ export const GitHub = ({
   );
 
   export const Cloudflare = ({
-    width = "24px",
-    height = "24px",
+    width = "40px",
+    height = "40px",
     fillColor = "gray",
     strokeColor = "gray",
     ...props

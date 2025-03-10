@@ -535,7 +535,7 @@ const Download = ({ width = "24px", height = "24px", fillColor = "#000", ...prop
         lineNumber: 189,
         columnNumber: 2
     }, this);
-const Cloudflare = ({ width = "24px", height = "24px", fillColor = "gray", strokeColor = "gray", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+const Cloudflare = ({ width = "40px", height = "40px", fillColor = "gray", strokeColor = "gray", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         viewBox: "0 -3.5 31 31",
         width: width,
         height: height,
