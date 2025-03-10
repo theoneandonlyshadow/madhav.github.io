@@ -233,8 +233,8 @@ export const GitHub = ({
   export const Cloudflare = ({
     width = "40px",
     height = "40px",
-    fillColor = "gray",
-    strokeColor = "gray",
+    fillColor = "orange",
+    strokeColor = "",
     ...props
   }) => (
     <svg
