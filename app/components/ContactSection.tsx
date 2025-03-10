@@ -50,7 +50,7 @@ export const ContactSection = () => {
 						View Resume
 					</a>
 				</div>
-				<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+				<hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
 				{/* Social Links */}
 				<div className="flex justify-center gap-6 inlininFoo text-gray-400">
 					Built with<NextJS />  Deployed on<Cloudflare />
