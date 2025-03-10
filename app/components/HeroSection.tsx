@@ -80,7 +80,7 @@ export const HeroSection = () => {
 						<a href="https://www.hackerrank.com/profile/madhavnair495" className="group relative inline-flex items-center justify-center">
 							<HackerRank />
 						</a>
-						<a href="https://www.hackerrank.com/profile/madhavnair495" className="group relative inline-flex items-center justify-center">
+						<a href="https://leetcode.com/u/theoneandonlyshadow/" className="group relative inline-flex items-center justify-center">
 							<LeetCode />
 						</a>
 						<a href="https://app.hackthebox.com/profile/1991144" className="group relative inline-flex items-center justify-center">
