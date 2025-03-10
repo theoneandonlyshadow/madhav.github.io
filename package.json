@@ -9,7 +9,7 @@
 		"lint": "next lint"
 	},
 	"engines": {
-		"node": ">=18.18.0"
+		"node": ">=20.0.0"
 	},
 	"dependencies": {
 		"@cloudflare/next-on-pages": "^1.13.9",
