@@ -1,5 +1,5 @@
 import React from 'react';
-import { NextJS } from './Icons';
+import { NextJS, Cloudflare } from './Icons';
 
 export const ContactSection = () => {
 	return (
@@ -50,10 +50,13 @@ export const ContactSection = () => {
 						View Resume
 					</a>
 				</div>
-
+				<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
 				{/* Social Links */}
-				<div className="flex justify-center gap-6 inlininFoo">
-					Built with <NextJS /> by Madhav Nair
+				<div className="flex justify-center gap-6 inlininFoo text-gray-400">
+					Built with<NextJS />  Deployed on<Cloudflare />
+				</div>
+				<div className="flex justify-center gap-6 inlininFoo text-gray-400">
+					by Madhav
 				</div>
 			</div>
 		</section>
