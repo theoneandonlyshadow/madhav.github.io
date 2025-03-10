@@ -3,12 +3,13 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev --turbopack",
+		"dev": "npm install && next dev --turbopack && next-on-pages",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@cloudflare/next-on-pages": "^1.13.9",
 		"@heroui/tooltip": "^2.2.13",
 		"framer-motion": "^12.0.6",
 		"next": "15.1.6",
