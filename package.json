@@ -8,7 +8,11 @@
 		"start": "next start",
 		"lint": "next lint"
 	},
+	"engines": {
+		"node": ">=18.18.0"
+	},
 	"dependencies": {
+		"@cloudflare/next-on-pages": "^1.13.9",
 		"@heroui/tooltip": "^2.2.13",
 		"framer-motion": "^12.0.6",
 		"next": "15.1.6",
