@@ -15,7 +15,7 @@ export default function WebDeveloperPortfolio() {
 	useEffect(() => {
 	  // Register service worker
 	  if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
-		navigator.serviceWorker.register('/sw.js');
+		navigator.serviceWorker.register('../public/sw.js');
 	  }
   
 	  // Handle offline/online status
