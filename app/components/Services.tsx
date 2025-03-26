@@ -139,8 +139,8 @@ export const Nodejs = ({
   );
   
   export const MongoDB = ({
-    width = "32px",
-    height = "32px",
+    width = "102px",
+    height = "102px",
     fillColor = "#fff",
     ...props
   }) => (
