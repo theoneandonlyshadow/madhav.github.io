@@ -14,10 +14,12 @@ const ASSETS_TO_CACHE = [
   '../app/components/ProjectsSection.tsx',
   '../app/components/SkillsSection.tsx',
   '../app/components/WebCapabilitiesSection.tsx',
-  '/_next/static/chunks/main.js',
-  '/_next/static/chunks/webpack.js',
-  '/_next/static/chunks/pages/_app.js',
-  '/_next/static/chunks/pages/pages.js'
+  '/_next/static/chunks/app/page-1ae10b74c652131a.js',
+  '/_next/static/chunks/4bd1b696-24b05fec8bffec13.js',
+  '/_next/static/chunks/517-d49b1e6bf016612f.js',
+  '/_next/static/chunks/970-f0d9cb608cbb3092.js',
+  '/_next/static/chunks/main-app-5b0f815b1f9f1cb4.js',
+  '/_next/static/chunks/webpack-05cc406d6a87b1a9.js'
 ];
 
 self.addEventListener('install', (event) => {
