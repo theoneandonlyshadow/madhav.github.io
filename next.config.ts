@@ -1,10 +1,8 @@
-// next.config.ts
 import type { NextConfig } from "next";
 import withPWA from "next-pwa";
 
 const nextConfig: NextConfig = withPWA({
-  reactStrictMode: true,
-  swcMinify: true,
+  // PWA configuration (nested under pwa property)
   pwa: {
     dest: "public",
     register: true,
@@ -12,13 +10,13 @@ const nextConfig: NextConfig = withPWA({
     disable: process.env.NODE_ENV === "development",
     runtimeCaching: [
       {
-        urlPattern: /\/_next\/static\/.*/i,
+        urlPattern: /\/_next\/static\/(?!.*?[.]json$).*/i,
         handler: "CacheFirst",
         options: {
-          cacheName: "next-static-assets",
+          cacheName: "next-static",
           expiration: {
             maxEntries: 200,
-            maxAgeSeconds: 365 * 24 * 60 * 60 // 1 year
+            maxAgeSeconds: 365 * 24 * 60 * 60
           }
         }
       },
@@ -29,35 +27,41 @@ const nextConfig: NextConfig = withPWA({
           cacheName: "next-images",
           expiration: {
             maxEntries: 100,
-            maxAgeSeconds: 30 * 24 * 60 * 60 // 30 days
+            maxAgeSeconds: 30 * 24 * 60 * 60
           }
         }
       },
       {
-        urlPattern: /\.(?:js|css|tsx|ts)$/i,
-        handler: "NetworkFirst",
+        urlPattern: /\.(?:pdf|ico|svg|jpg|jpeg|png|webp|avif|woff2?)$/i,
+        handler: "CacheFirst",
         options: {
-          cacheName: "static-components",
+          cacheName: "static-assets",
           expiration: {
-            maxEntries: 200,
-            maxAgeSeconds: 365 * 24 * 60 * 60 // 1 year
+            maxEntries: 100,
+            maxAgeSeconds: 365 * 24 * 60 * 60
           }
         }
       },
       {
-        urlPattern: /.*/i,
+        urlPattern: /\/.*/i,
         handler: "NetworkFirst",
         options: {
           cacheName: "others",
           networkTimeoutSeconds: 10,
           expiration: {
             maxEntries: 100,
-            maxAgeSeconds: 24 * 60 * 60 // 24 hours
+            maxAgeSeconds: 24 * 60 * 60
+          },
+          matchOptions: {
+            ignoreSearch: true
           }
         }
       }
     ]
   }
 });
+
+nextConfig.reactStrictMode = true;
+nextConfig.swcMinify = true;
 
 export default nextConfig;

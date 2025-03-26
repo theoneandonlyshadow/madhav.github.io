@@ -1,4 +1,4 @@
-const CACHE_NAME = 'madhav_cache_v2'; // Changed version
+const CACHE_NAME = 'madhav_cache_v2';n
 const ASSETS_TO_CACHE = [
   '/',
   '/madhav.ico',
@@ -13,7 +13,11 @@ const ASSETS_TO_CACHE = [
   '../app/components/Icons.tsx',
   '../app/components/ProjectsSection.tsx',
   '../app/components/SkillsSection.tsx',
-  '../app/components/WebCapabilitiesSection.tsx'
+  '../app/components/WebCapabilitiesSection.tsx',
+  '/_next/static/chunks/main.js',
+  '/_next/static/chunks/webpack.js',
+  '/_next/static/chunks/pages/_app.js',
+  '/_next/static/chunks/pages/pages.js'
 ];
 
 self.addEventListener('install', (event) => {
