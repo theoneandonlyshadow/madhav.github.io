@@ -1,4 +1,4 @@
-const CACHE_NAME = 'madhav_cache_v2';n
+const CACHE_NAME = 'madhav_cache_v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/madhav.ico',
