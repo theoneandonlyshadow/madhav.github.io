@@ -153,7 +153,7 @@ export const ProjectsSection: React.FC = () => {
 												<li>• Real-time Chat UI</li>
 												<li>• Responsive Layout</li>
 												<li>• Cached Assets</li>
-												<li>• Data Export Tools</li>
+												<li>• Optimized Styling</li>
 											</ul>
 										</div>
 										<div>
@@ -173,7 +173,7 @@ export const ProjectsSection: React.FC = () => {
 										<ul className="space-y-2 text-sm text-gray-400">
 											<li>• 1.28s Page Loading Time</li>
 											<li>• Sub-second Query Response</li>
-											<li>• </li>
+											<li>• Quick API Response Time</li>
 										</ul>
 									</div>
 								</div>
