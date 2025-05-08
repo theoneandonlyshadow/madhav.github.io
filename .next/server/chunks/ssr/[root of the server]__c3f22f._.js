@@ -79,7 +79,7 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$g
 ;
 ;
 const metadata = {
-    title: 'Madhav Nair | Home',
+    title: 'Madhav Nair',
     description: 'The greatest Backend Developer of all time.',
     keywords: [
         'Web Developer',
@@ -95,7 +95,10 @@ const metadata = {
         'Performance Optimization',
         'Modern Web Development',
         'Progressive Web Apps',
-        'Madhav Nair'
+        'Madhav Nair',
+        'Plentra Technologies',
+        'Madhav MaxTac',
+        'Madhav Nair MaxTac'
     ],
     authors: [
         {
@@ -139,12 +142,12 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 73,
+            lineNumber: 76,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 72,
+        lineNumber: 75,
         columnNumber: 3
     }, this);
 }

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Madhav Nair | Home',
+	title: 'Madhav Nair',
 	description:
 		'The greatest Backend Developer of all time.',
 	keywords: [
@@ -31,6 +31,9 @@ export const metadata: Metadata = {
 		'Modern Web Development',
 		'Progressive Web Apps',
 		'Madhav Nair',
+		'Plentra Technologies',
+		'Madhav MaxTac',
+		'Madhav Nair MaxTac'
 	],
 	authors: [{ name: 'Madhav Nair' }],
 	creator: 'Madhav Nair',

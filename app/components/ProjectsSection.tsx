@@ -1,164 +1,394 @@
-import React from 'react';
-import Image from 'next/image';
-import { Nodejs, TypeScript, Python, Docker, EJS, Expressjs, Java, Warning } from './Services';
-import { Download } from './Icons';
+'use client';
 
-export const ProjectsSection = () => {
+import { motion } from 'framer-motion';
+
+export const ProjectsSection: React.FC = () => {
 	return (
-		<section id="work" className="py-12 sm:py-20 px-4 bg-[#161B22] scroll-mt-20">
+		<section className="py-20 px-4">
 			<div className="max-w-6xl mx-auto">
-				<h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center">Featured Projects</h2>
-				<div className="space-y-8 sm:space-y-12">
-					{[
-						{
-							title: 'NetProbe Mk.II',
-							description: 'Internet Connection Monitor with Real-Time Updates and Lightweight Tools.',
-							tools: {
-								icon0: <Nodejs />,
-								icon1: <Docker />,
-							},
-							techDetails: ['Notifies when Internet has gone offline/online [Real Time]', 'Clear your local DNS Cache', 'Downtime Tracker', 'Advanced Logging'],
-							image: '/img/netprobe.png',
-							github: 'https://github.com/theoneandonlyshadow/NetProbe/',
-							download: 'https://github.com/theoneandonlyshadow/NetProbe/releases',
-							tooltip: 'Download Available',
-						},
-						{
-							title: 'Express Relay (XPR)',
-							description: 'File Sharing Web Application with Powerful Security and Privacy',
-							tools: {
-								icon0: <Nodejs />,
-								icon1: <Expressjs />,
-								icon2: <EJS />,
-								icon3: <TypeScript />,
-							},
-							github: 'https://github.com/theoneandonlyshadow/Echo-Relay-Dbox',
-							techDetails: ['AES-256 Encryption', 'SHA-256 Hashing', 'WebSocket Chat Interface', 'Google Drive API Integration'],
-							image: '/img/xpr.png',
-							visit: '',
-							tooltip: 'Under Development',
-						},
-						{
-							title: "MaxTac's Vermilion AI",
-							description: 'Desktop AI Assistant with Uncensored Results and Automation Intelligence',
-							tools: {
-								icon0: <Nodejs />,
-								icon1: <Python />,
-								icon2: <Java />,
-							},
-							github: 'https://github.com/theoneandonlyshadow/Scarlett-Vermillion',
-							techDetails: ['Uncensored results with no bias', 'Integrated in Desktop App for Automation capabilities', 'N0 Data Tracking Policy', 'XS1 Algorithm: Detect Automation prompts apart from regular prompts'],
-							image: '/img/verm.png',
-							download: '',
-							tooltip: 'Under Development',
-						},
-						{
-							title: "NetDaemon",
-							description: "Under Development",
-							icon: <Warning />,
-							tools: {
-								icon0: <Nodejs />,
-								icon1: <Docker />,
-							},
-							github: 'https://github.com/theoneandonlyshadow/NetDaemon',
-							techDetails: ['Monitor & manage your DNS Activity', 'Extended DNS features', 'N0 Data Tracking Policy', 'Advanced Logging'],
-							download: '',
-							tooltip: 'Under Development',
-						},
-						{
-							title: "RelayDriver",
-							description: "Under Development",
-							icon: <Warning />,
-							tools: {
-								icon0: <Nodejs />,
-								icon1: <Docker />,
-							},
-							github: 'https://github.com/theoneandonlyshadow/RelayDriver',
-							techDetails: ['Upload files directly to XPR', 'Extended XPR features', 'N0 Data Tracking Policy', 'Advanced Logging'],
-							download: '',
-							tooltip: 'Under Development',
-						},
-					].map((project) => (
-						<div key={project.title} className="bg-[#21262D] rounded-lg overflow-hidden">
-							<div className="grid grid-cols-1 lg:grid-cols-2">
-								<div className="p-4 sm:p-6 space-y-4 sm:space-y-6">
-									<h3 className="text-xl sm:text-2xl font-bold">{project.title}</h3>
-									<p className="text-sm sm:text-base text-gray-400 inlinin">{project.description} {project.icon}</p>
-									{/* Performance Metrics */}
-									<div className="space-y-3">
-										<h4 className="text-base sm:text-lg font-semibold">Technologies Used</h4>
-										<div className="grid grid-cols-3 gap-2 sm:gap-4 inlinin">
-											{Object.entries(project.tools).map(([key, value]) => (
-												<div key={key} className="text-center">
-													<div className="text-2xl font-bold text-blue-400">{value}</div>
-												</div>
-											))}
+				<div className="relative z-10 mb-16 flex flex-col items-center">
+					<motion.h2 
+						initial={{ opacity: 0 }} 
+						whileInView={{ opacity: 1 }} 
+						viewport={{ once: true }} 
+						className="text-3xl font-bold text-center"
+					>
+						Call me showoff but I <span className="font-light">love to</span> build things
+					</motion.h2>
+				</div>
+				<div className="space-y-16">
+					{/* NetProbe */}
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						className="bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800"
+					>
+						<div className="p-8">
+							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+								<div className="space-y-6">
+									<div>
+										<h3 className="text-2xl font-bold mb-4">NetProbe Mk.II</h3>
+										<p className="text-gray-400">
+											A high-performance system tray internet connection monitor handling notifications and DNS cache removal with real-time advanced logging. Supports Windows, Debian Linux and MacOS.
+										</p>
+									</div>
+
+									<div className="grid grid-cols-2 gap-6">
+										<div>
+											<h4 className="text-sm font-semibold text-purple-400 mb-3">Backend Systems</h4>
+											<ul className="space-y-2 text-sm text-gray-400">
+												<li>• Node.js Runtime</li>
+												<li>• Toast Notification Component</li>
+												<li>• File System</li>
+												<li>• CLI Process Execution</li>
+											</ul>
 										</div>
 									</div>
 
-									{/* Technical Implementation */}
-									<div>
-										<h4 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">Technical Implementation</h4>
-										<ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base">
-											{project.techDetails.map((detail) => (
-												<li key={detail} className="flex items-center gap-2">
-													<span className="text-green-400">▹</span>
-													<span className="text-gray-300">{detail}</span>
-												</li>
-											))}
+									<div className="space-y-3">
+										<h4 className="text-sm font-semibold text-teal-400">Key Achievements</h4>
+										<ul className="space-y-2 text-sm text-gray-400">
+											<li>• 55.56% Size Reduction</li>
+											<li>• 250ms Average Response </li>
+											<li>• ~5 MB Memory & ~3–5% RAM Overhead</li>
 										</ul>
 									</div>
-
-									<div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mt-8 sm:mt-12 px-4 sm:px-0">
-										<a href={project.github} className="group relative inline-flex items-center justify-center">
-											<div className="absolute -inset-0.5 from-blue-500 to-purple-500 rounded-full blur opacity-75 group-hover:opacity-100 transition"></div>
-											<span className="relative px-6 sm:px-8 py-3 bg-[#161B22] rounded-full inline-flex items-center justify-center w-full sm:w-auto">
-												GitHub
-												<svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-												</svg>
-											</span>
-										</a>
-										{project.download ? (
-											<div className="relative group inlinin">
-												<a
-													href={project.download}
-													className="px-6 sm:px-8 py-3 bg-[#21262D] hover:bg-[#2D333B] transition-colors border border-[#2D333B] hover:border-gray-600 text-center rounded-full"
-												>
-													<Download />
-												</a>
-												{project.tooltip && (
-													<div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
-														{project.tooltip}
-													</div>
-												)}
-											</div>
-										) : (
-											<div className="relative group inlinin">
-												<a
-													href={project.visit}
-													className="px-6 sm:px-8 py-3 bg-[#21262D] hover:bg-[#2D333B] transition-colors border border-[#2D333B] hover:border-gray-600 text-center rounded-full"
-												>
-													Visit
-												</a>
-												{project.tooltip && (
-													<div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
-														{project.tooltip}
-													</div>
-												)}
-											</div>
-										)}
-									</div>
 								</div>
-								<div className="relative h-full min-h-[300px] lg:min-h-full">
-									<Image src={project.image || '/code.png'} alt={project.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
-									<div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-[#21262D] via-transparent to-transparent lg:via-[#21262D]/20 lg:to-[#21262D]/40"></div>
+
+								<div className="bg-black/30 rounded-xl p-6">
+									<h4 className="text-sm font-semibold text-gray-400 mb-4">System Architecture</h4>
+									<div className="aspect-[4/3] bg-black/50 rounded-lg p-4">
+										{/* Add detailed system architecture diagram here */}
+										<svg className="w-full h-full" viewBox="0 0 400 300">
+											{/* Client Layer */}
+											<g>
+    											<rect x="20" y="20" width="360" height="40" rx="4" className="fill-blue-500/20 stroke-blue-500" strokeWidth="1" />
+    											<text x="200" y="45" textAnchor="middle" className="fill-gray-400 text-[12px]">
+        										System Tray Application ( Node.js )
+    											</text>
+											</g>
+
+											{/* API Layer */}
+											<g>
+												<rect x="20" y="80" width="170" height="40" rx="4" className="fill-purple-500/20 stroke-purple-500" strokeWidth="1" />
+												<rect x="210" y="80" width="170" height="40" rx="4" className="fill-purple-500/20 stroke-purple-500" strokeWidth="1" />
+												<text x="105" y="105" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													Connection Monitor
+													<title>is-online  |  Intreval Checks</title>
+												</text>
+												<text x="295" y="105" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													System Interface
+													<title>systrayv2  |  node-notifier</title>
+												</text>
+											</g>
+
+											{/* Cache Layer */}
+											<g>
+												<rect x="20" y="140" width="360" height="30" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
+												<text x="200" y="160" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													System Resource Manager
+												</text>
+											</g>
+
+											{/* Database Layer */}
+											<g>
+												<rect x="20" y="190" width="170" height="40" rx="4" className="fill-blue-500/20 stroke-blue-500" strokeWidth="1" />
+												<rect x="210" y="190" width="170" height="40" rx="4" className="fill-purple-500/20 stroke-purple-500" strokeWidth="1" />
+												<text x="105" y="215" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													Log Management
+													<title>file system   |  promises</title>
+												</text>
+												<text x="295" y="215" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													OS Process Execution
+													<title>child_process  |  os</title>
+												</text>
+											</g>
+
+											{/* Search Layer */}
+											<g>
+												<rect x="20" y="250" width="360" height="30" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
+												<text x="200" y="270" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													System Notification API
+												</text>
+											</g>
+
+											{/* Connection Lines */}
+											<g className="stroke-gray-600" strokeWidth="1">
+												<line x1="200" y1="60" x2="200" y2="80" />
+												<line x1="105" y1="120" x2="105" y2="140" />
+												<line x1="295" y1="120" x2="295" y2="140" />
+												<line x1="105" y1="170" x2="105" y2="190" />
+												<line x1="295" y1="170" x2="295" y2="190" />
+												<line x1="200" y1="230" x2="200" y2="250" />
+											</g>
+										</svg>
+									</div>
 								</div>
 							</div>
 						</div>
-					))}
+					</motion.div>
+
+					{/* Real-time Analytics Platform */}
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						className="bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800"
+					>
+						<div className="p-8">
+							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+								<div className="space-y-6">
+									<div>
+										<h3 className="text-2xl font-bold mb-4">Express Relay</h3>
+										<p className="text-gray-400">
+											A scalable file sharing service. Secure AES256 encryption, real-time data processing, WebSocket chat UI and unlimited file upload.
+										</p>
+									</div>
+
+									<div className="grid grid-cols-2 gap-6">
+										<div>
+											<h4 className="text-sm font-semibold text-blue-400 mb-3">Frontend Features</h4>
+											<ul className="space-y-2 text-sm text-gray-400">
+												<li>• Real-time Chat UI</li>
+												<li>• Responsive Layout</li>
+												<li>• Cached Assets</li>
+												<li>• Data Export Tools</li>
+											</ul>
+										</div>
+										<div>
+											<h4 className="text-sm font-semibold text-purple-400 mb-3">Backend Systems</h4>
+											<ul className="space-y-2 text-sm text-gray-400">
+												<li>• Google Cloud API</li>
+												<li>• MongoDB Data Validation</li>
+												<li>• Node.js Data Processing</li>
+												<li>• WebSocket Protocol</li>
+												<li>• Cloudflare Traffic Control</li>
+											</ul>
+										</div>
+									</div>
+
+									<div className="space-y-3">
+										<h4 className="text-sm font-semibold text-teal-400">Performance Metrics</h4>
+										<ul className="space-y-2 text-sm text-gray-400">
+											<li>• 1.28s Page Loading Time</li>
+											<li>• Sub-second Query Response</li>
+											<li>• </li>
+										</ul>
+									</div>
+								</div>
+
+								
+
+								<div className="bg-black/30 rounded-xl p-6">
+									<h4 className="text-sm font-semibold text-gray-400 mb-4">Data Flow Architecture</h4>
+									<div className="aspect-[4/3] bg-black/50 rounded-lg p-4">
+										<svg className="w-full h-full" viewBox="0 0 400 300">
+											{/* Data Sources */}
+											<g>
+												<rect x="20" y="20" width="100" height="30" rx="4" className="fill-blue-500/20 stroke-blue-500" strokeWidth="1" />
+												<rect x="135" y="20" width="125" height="30" rx="4" className="fill-blue-500/20 stroke-blue-500" strokeWidth="1" />
+												<rect x="270" y="20" width="110" height="30" rx="4" className="fill-blue-500/20 stroke-blue-500" strokeWidth="1" />
+												<text x="75" y="40" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													Web UI
+													<title>The Website Interface</title>
+												</text>
+												<text x="200" y="40" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													File Upload Handler
+													<title>Multer  |  Express.js</title>
+												</text>
+												<text x="325" y="40" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													XPR-WSS
+													<title>XPR-WSS: Express Relay Websocket Secure</title>
+												</text>
+											</g>
+
+											{/* Event Processing */}
+											<g>
+												<rect x="20" y="80" width="360" height="40" rx="4" className="fill-purple-500/20 stroke-purple-500" strokeWidth="1" />
+												<text x="200" y="105" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													Express.js Backend
+												</text>
+											</g>
+
+											{/* Processing Layer */}
+											<g>
+												<rect x="20" y="150" width="170" height="40" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
+												<rect x="210" y="150" width="170" height="40" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
+												<text x="105" y="175" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													FRA-200
+												</text>
+												<text x="295" y="175" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													File Batch Processing
+												</text>
+											</g>
+
+											{/* Storage Layer */}
+											<g>
+												<rect x="20" y="220" width="170" height="30" rx="4" className="fill-blue-500/20 stroke-blue-500" strokeWidth="1" />
+												<rect x="210" y="220" width="170" height="30" rx="4" className="fill-purple-500/20 stroke-purple-500" strokeWidth="1" />
+												<text x="105" y="240" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													Google Cloud Storage
+												</text>
+												<text x="295" y="240" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													MongoDB Database
+												</text>
+											</g>
+
+											{/* API Layer */}
+											<g>
+												<rect x="20" y="270" width="360" height="30" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
+												<text x="200" y="290" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													RESTful API Layer - Cloudflare Traffic Control
+												</text>
+											</g>
+
+											{/* Connection Lines */}
+											<g className="stroke-gray-600" strokeWidth="1">
+												<line x1="75" y1="50" x2="75" y2="80" />
+												<line x1="200" y1="50" x2="200" y2="80" />
+												<line x1="325" y1="50" x2="325" y2="80" />
+												<line x1="200" y1="120" x2="200" y2="150" />
+												<line x1="105" y1="190" x2="105" y2="220" />
+												<line x1="295" y1="190" x2="295" y2="220" />
+												<line x1="200" y1="250" x2="200" y2="270" />
+											</g>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</motion.div>
+
+					{/* Vermilion AI */}
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						className="bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800"
+					>
+						<div className="p-8">
+							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+								<div className="space-y-10">
+									<div>
+										<h3 className="text-2xl font-bold mb-4">Vermilion AI</h3>
+										<p className="text-gray-400">
+											Downloadable AI model with unrestricted access to information. Trained on a custom dataset of 1.5 million documents, it provides a unique and powerful tool for automating tasks within your OS.
+										</p>
+									</div>
+
+									<div className="grid grid-cols-2 gap-6">
+										<div>
+											<h4 className="text-sm font-semibold text-blue-400 mb-3">Frontend Features</h4>
+											<ul className="space-y-2 text-sm text-gray-400">
+												<li>• JavaFX</li>
+												<li>• Responsive Layout</li>
+												<li>• Tailwind CSS</li>
+												<li>• Content Generation Workflow</li>
+											</ul>
+										</div>
+										<div>
+											<h4 className="text-sm font-semibold text-purple-400 mb-3">Backend Systems</h4>
+											<ul className="space-y-2 text-sm text-gray-400">
+												<li>• Java Runtime</li>
+												<li>• Python TensorFlow</li>
+												<li>• Finetuned Deepseek R1 Model</li>
+												<li>• XS1 Command Injection</li>
+											</ul>
+										</div>
+									</div>
+
+									<div className="space-y-3">
+										<h4 className="text-sm font-semibold text-teal-400">Target Performance Metrics</h4>
+										<ul className="space-y-2 text-sm text-gray-400">
+											<li>• ≥ 95% XS1 Accuracy.</li>
+											<li>• ≤ 1.2 seconds Model Inference Time.</li>
+											<li>• ≤ 500MB RAM, ≤ 15% CPU on idle</li>
+											<li>• ≤ 1GB, ≤ 35% CPU under load</li>
+											<li>• ≤ 2% XS1 Cmd Injection Error Rate</li>
+										</ul>
+									</div>
+								</div>
+
+								<div className="bg-black/30 rounded-xl p-6">
+									<h4 className="text-sm font-semibold text-gray-400 mb-4">System Architecture</h4>
+									<div className="aspect-[3/3] bg-black/50 rounded-lg p-4">
+										<svg className="w-full h-full" viewBox="0 0 400 300">
+											{/* Event Processing */}
+											<g>
+												<rect x="20" y="10" width="360" height="40" rx="4" className="fill-purple-500/20 stroke-purple-500" strokeWidth="1" />
+												<text x="200" y="35" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													JavaFX UI
+													<title>Java eXtention Framework</title>
+												</text>
+											</g>
+
+											{/* Event Processing */}
+											<g>
+												<rect x="20" y="80" width="360" height="40" rx="4" className="fill-purple-500/20 stroke-purple-500" strokeWidth="1" />
+												<text x="200" y="105" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													XS1 System Automation Layer
+													<title>Xerius Spectra v1.0</title>
+												</text>
+											</g>
+
+											{/* Processing Layer */}
+											<g>
+												<rect x="20" y="150" width="113.3" height="40" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
+												<rect x="145" y="150" width="113.3" height="40" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
+												<rect x="265" y="150" width="113.3" height="40" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
+												<text x="77.5" y="175" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													DeepSeek R1
+												</text>
+												<text x="200" y="175" textAnchor="middle" className="fill-gray-400 text-[11px]">
+													Uncensored Dataset
+												</text>
+												<text x="320" y="175" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													Wolfram Alpha
+												</text>
+											</g>
+											
+
+											{/* Storage Layer */}
+											<g>
+												<rect x="20" y="220" width="113.3" height="30" rx="4" className="fill-blue-500/20 stroke-blue-500" strokeWidth="1" />
+												<rect x="145" y="220" width="113.3" height="30" rx="4" className="fill-purple-500/20 stroke-purple-500" strokeWidth="1" />
+												<rect x="265" y="220" width="113.3" height="30" rx="4" className="fill-purple-500/20 stroke-purple-500" strokeWidth="1" />
+												<text x="77.5" y="240" textAnchor="middle" className="fill-gray-400 text-[11px]">
+													Sentiment Analysis
+												</text>
+												<text x="200" y="240" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													ML Layer
+												</text>
+												<text x="320" y="240" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													Wolfram Alpha
+												</text>
+											</g>
+
+											{/* API Layer */}
+											<g>
+												<rect x="20" y="270" width="360" height="30" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
+												<text x="200" y="290" textAnchor="middle" className="fill-gray-400 text-[12px]">
+													Compromise Natural Language Processing
+												</text>
+											</g>
+
+											{/* Connection Lines */}
+											<g className="stroke-gray-600" strokeWidth="1">
+												<line x1="200" y1="50" x2="200" y2="80" />
+												<line x1="200" y1="120" x2="200" y2="150" />
+												<line x1="105" y1="190" x2="105" y2="220" />
+												<line x1="295" y1="190" x2="295" y2="220" />
+												<line x1="200" y1="250" x2="200" y2="270" />
+											</g>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</motion.div>
 				</div>
 			</div>
 		</section>
 	);
-};
+}
