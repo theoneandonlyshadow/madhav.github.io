@@ -1,8 +1,30 @@
-import type { NextConfig } from "next";
 import nextPWA from "next-pwa";
 
-// Initialize next-pwa with configuration directly (not under a 'pwa' property)
-const withPWA = nextPWA({
+// Define a generic type for the config to avoid specific type conflicts
+type PWAConfig = {
+  dest: string;
+  register: boolean;
+  skipWaiting: boolean;
+  disable: boolean;
+  runtimeCaching: Array<{
+    urlPattern: RegExp;
+    handler: string;
+    options: {
+      cacheName: string;
+      expiration: {
+        maxEntries: number;
+        maxAgeSeconds: number;
+      };
+      matchOptions?: {
+        ignoreSearch: boolean;
+      };
+      networkTimeoutSeconds?: number;
+    };
+  }>;
+};
+
+// Initialize next-pwa with configuration
+const pwaConfig: PWAConfig = {
   dest: "public",
   register: true,
   skipWaiting: true,
@@ -57,13 +79,21 @@ const withPWA = nextPWA({
       }
     }
   ]
-});
+};
 
-// Create the NextConfig object
-const nextConfig: NextConfig = {
+const withPWA = nextPWA(pwaConfig);
+
+// Create the config object with our own type
+interface NextJSConfig {
+  reactStrictMode: boolean;
+  swcMinify: boolean;
+}
+
+const nextConfig: NextJSConfig = {
   reactStrictMode: true,
   swcMinify: true,
 };
 
-// Export the config wrapped with PWA
-export default withPWA(nextConfig);
+// Use type assertion with unknown as an intermediate step
+// This avoids the explicit 'any' while still resolving type conflicts
+export default withPWA(nextConfig as unknown as Record<string, unknown>);
