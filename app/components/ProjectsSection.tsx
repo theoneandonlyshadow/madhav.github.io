@@ -173,7 +173,7 @@ export const ProjectsSection: React.FC = () => {
 										<ul className="space-y-2 text-sm text-gray-400">
 											<li>• 1.28s Page Loading Time</li>
 											<li>• Sub-second Query Response</li>
-											<li>• Quick API Response Time</li>
+											<li>• ~200ms XPR-WSS Response Time</li>
 										</ul>
 									</div>
 								</div>
