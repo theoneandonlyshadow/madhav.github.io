@@ -339,9 +339,11 @@ export const ProjectsSection: React.FC = () => {
 												<rect x="265" y="150" width="113.3" height="40" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
 												<text x="77.5" y="175" textAnchor="middle" className="fill-gray-400 text-[12px]">
 													DeepSeek R1
+													<title>Finetuned Model</title>
 												</text>
 												<text x="200" y="175" textAnchor="middle" className="fill-gray-400 text-[11px]">
-													Uncensored Dataset
+													MxTc Cronen
+													<title>Cronen is an uncensored dataset. Available in my GitHub.</title>
 												</text>
 												<text x="320" y="175" textAnchor="middle" className="fill-gray-400 text-[12px]">
 													Wolfram Alpha
