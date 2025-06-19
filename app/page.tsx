@@ -3,7 +3,7 @@
 import { HeroSection } from './components/HeroSection';
 import { SkillsSection } from './components/SkillsSection';
 import { ProjectsSection } from './components/ProjectsSection';
-import ReggieServiceWorker from './components/WebCapabilitiesSection';
+import ReggieServiceWorker from './components/ReggieServiceWorker';
 import { ContactSection } from './components/ContactSection';
 import Cursor from './components/Curzr';
 
