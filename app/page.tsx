@@ -3,7 +3,7 @@
 import { HeroSection } from './components/HeroSection';
 import { SkillsSection } from './components/SkillsSection';
 import { ProjectsSection } from './components/ProjectsSection';
-// import { WebCapabilitiesSection } from './components/WebCapabilitiesSection';
+import ReggieServiceWorker from './components/WebCapabilitiesSection';
 import { ContactSection } from './components/ContactSection';
 import Cursor from './components/Curzr';
 
@@ -60,6 +60,7 @@ export default function WebDeveloperPortfolio() {
 		<ProjectsSection />
 		<ContactSection />
 		<Cursor />
+		<ReggieServiceWorker />
 	  </main>
 	);
   }

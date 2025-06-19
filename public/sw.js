@@ -6,14 +6,7 @@ const ASSETS_TO_CACHE = [
   '/img/netprobe.png',
   '/img/verm.png',
   '/img/xpr.png',
-  '/assets/madhav_resume.pdf',
-  '../app/components/ContactSection.tsx',
-  '../app/components/Curzr.tsx',
-  '../app/components/HeroSection.tsx',
-  '../app/components/Icons.tsx',
-  '../app/components/ProjectsSection.tsx',
-  '../app/components/SkillsSection.tsx',
-  '../app/components/WebCapabilitiesSection.tsx'
+  '/assets/madhav_resume.pdf'
 ];
 
 self.addEventListener('install', (event) => {
