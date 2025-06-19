@@ -6,7 +6,9 @@ const ASSETS_TO_CACHE = [
   '/img/netprobe.png',
   '/img/verm.png',
   '/img/xpr.png',
-  '/assets/madhav_resume.pdf'
+  '/assets/madhav_resume.pdf',
+  '../app/globals.css',
+  '../app/bootstrap.min.css',
 ];
 
 self.addEventListener('install', (event) => {
@@ -18,7 +20,6 @@ self.addEventListener('install', (event) => {
   });
   
   self.addEventListener('fetch', (event) => {
-    // Skip non-GET requests and external resources
     if (event.request.method !== 'GET' || !event.request.url.startsWith(self.location.origin)) {
       return;
     }
@@ -26,13 +27,10 @@ self.addEventListener('install', (event) => {
     event.respondWith(
       caches.match(event.request)
         .then(cached => {
-          // Return cached version if available
           if (cached) return cached;
           
-          // Otherwise fetch from network
           return fetch(event.request)
             .then(response => {
-              // Cache successful responses
               if (response.ok) {
                 const clone = response.clone();
                 caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
@@ -40,7 +38,6 @@ self.addEventListener('install', (event) => {
               return response;
             })
             .catch(() => {
-              // For HTML requests, return a "fake" response to trigger your offline UI
               if (event.request.headers.get('accept').includes('text/html')) {
                 return new Response(null, { status: 408, statusText: 'Offline' });
               }

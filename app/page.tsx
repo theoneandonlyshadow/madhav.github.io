@@ -13,14 +13,12 @@ export default function WebDeveloperPortfolio() {
 	const [isOffline, setIsOffline] = useState(false);
   
 	useEffect(() => {
-	  // Register service worker
 	  if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
 		navigator.serviceWorker.register('../public/sw.js')
 		  .then(reg => console.log('SW registered:', reg))
 		  .catch(err => console.log('SW registration failed:', err));
 	  }
   
-	  // Handle offline/online detection
 	  const handleStatusChange = () => {
 		setIsOffline(!navigator.onLine);
 	  };
