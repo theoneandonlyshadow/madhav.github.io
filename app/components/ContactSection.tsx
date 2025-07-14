@@ -5,8 +5,8 @@ export const ContactSection = () => {
 	return (
 		<section id="contact" className="py-12 sm:py-20 px-4 bg-[#161B22] scroll-mt-20">
 			<div className="max-w-4xl mx-auto text-center px-4 sm:px-6">
-				<h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Let&apos;s Build Something Amazing</h2>
-				<p className="text-sm sm:text-base text-gray-400 mb-6">Schedule a call or an Interview. I&apos;m open to work.</p>
+				<h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">I Casually Create FOSS Projects</h2>
+				<p className="text-sm sm:text-base text-gray-400 mb-6">I appreciate the recognition if you check it out.</p>
 
 				{/* Location */}
 				<div className="flex items-center justify-center gap-2 text-gray-400 mb-8">
