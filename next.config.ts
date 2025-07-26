@@ -61,6 +61,12 @@ const withPWA = nextPWA({
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: [
+      "api.microlink.io",
+      "maxtac.tech",
+    ],
+  },
 };
 
 module.exports = withPWA(nextConfig);
