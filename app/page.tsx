@@ -11,7 +11,17 @@ import { useEffect, useState } from 'react';
 
 export default function WebDeveloperPortfolio() {
 	const [isOffline, setIsOffline] = useState(false);
-  
+  const placeholderImage = (
+    <NextImage
+      src="/img/maxtac.png"
+      alt="MaxTac Preview"
+      className="aspect-[16/9] h-auto w-full object-cover"
+      height={1000}
+      width={1000}
+      priority
+    />
+  );
+
 	useEffect(() => {
 	  if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
 		navigator.serviceWorker.register('../public/sw.js')
@@ -121,14 +131,7 @@ export default function WebDeveloperPortfolio() {
           className="relative z-10 mt-20 rounded-3xl border border-neutral-200 bg-neutral-100 p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
         >
 		  <div className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
-			<NextImage
-			  src="/img/maxtac.png"
-			  alt="MaxTac Preview"
-			  className="aspect-[16/9] h-auto w-full object-cover"
-			  height={1000}
-			  width={1000}
-			  priority
-			/>
+			{ placeholderImage }
 		  </div>
         </motion.div>
       </div>

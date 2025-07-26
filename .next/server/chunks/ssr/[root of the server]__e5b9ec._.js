@@ -80,7 +80,7 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$g
 ;
 const metadata = {
     title: 'Madhav Nair',
-    description: 'The greatest Backend Developer of all time.',
+    description: 'Associate SDE at Aimver',
     keywords: [
         'Web Developer',
         'Backend Developer',
@@ -97,6 +97,8 @@ const metadata = {
         'Progressive Web Apps',
         'Madhav Nair',
         'Plentra Technologies',
+        'Aimver Technologies',
+        'Madhav Aimver',
         'Madhav MaxTac',
         'Madhav Nair MaxTac'
     ],
@@ -107,16 +109,16 @@ const metadata = {
     ],
     creator: 'Madhav Nair',
     openGraph: {
-        title: 'Madhav Nair - Backend Developer',
-        description: 'The greatest Backend Developer of all time.',
+        title: 'Madhav Nair - Fullstack Developer',
+        description: 'Associate SDE at Aimver',
         url: 'https://maxtac.tech',
-        siteName: 'Madhav Nair - Backend Developer',
+        siteName: 'Madhav Nair - Fullstack Developer',
         images: [
             {
                 url: './madhav.ico',
                 width: 1200,
                 height: 630,
-                alt: 'Madhav Nair - Backend Developer'
+                alt: 'Madhav Nair - Fullstack Developer'
             }
         ],
         locale: 'en_US',
@@ -142,12 +144,12 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 76,
+            lineNumber: 78,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 75,
+        lineNumber: 77,
         columnNumber: 3
     }, this);
 }

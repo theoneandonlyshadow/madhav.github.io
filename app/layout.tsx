@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: 'Madhav Nair',
 	description:
-		'The greatest Backend Developer of all time.',
+		'Associate SDE at Aimver',
 	keywords: [
 		'Web Developer',
 		'Backend Developer',
@@ -32,22 +32,24 @@ export const metadata: Metadata = {
 		'Progressive Web Apps',
 		'Madhav Nair',
 		'Plentra Technologies',
+		'Aimver Technologies',
+		'Madhav Aimver',
 		'Madhav MaxTac',
 		'Madhav Nair MaxTac'
 	],
 	authors: [{ name: 'Madhav Nair' }],
 	creator: 'Madhav Nair',
 	openGraph: {
-		title: 'Madhav Nair - Backend Developer',
-		description: 'The greatest Backend Developer of all time.',
+		title: 'Madhav Nair - Fullstack Developer',
+		description: 'Associate SDE at Aimver',
 		url: 'https://maxtac.tech',
-		siteName: 'Madhav Nair - Backend Developer',
+		siteName: 'Madhav Nair - Fullstack Developer',
 		images: [
 			{
 				url: './madhav.ico',
 				width: 1200,
 				height: 630,
-				alt: 'Madhav Nair - Backend Developer',
+				alt: 'Madhav Nair - Fullstack Developer',
 			},
 		],
 		locale: 'en_US',

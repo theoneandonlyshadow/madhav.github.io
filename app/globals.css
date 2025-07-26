@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 * {
-	cursor: none !important;
+	cursor: auto !important;
 }
 
 html, body {

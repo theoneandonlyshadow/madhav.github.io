@@ -69,10 +69,10 @@ export const HeroSection = () => {
                       "Deploying dreams @",
                     ]}
                   />
-                  <span className="text-blue-300">
+                  <span className="text-blue-700">
                     <LinkPreview
                       url="https://aimver.com"
-                      className="text-blue-400"
+                      className="text-blue-700"
                     >
                       Aimver
                     </LinkPreview>
