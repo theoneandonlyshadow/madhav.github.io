@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": {
     "name": "Madhav Nair",
-    "email": "madhav@madhavn.com",
+    "email": "hi@madhavn.com",
     "url": "https://github.com/theoneandonlyshadow"
   },
   "contributors": [
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "dev": "next dev -p 7007",
-    "build": "next build",
+    "build": "next build --no-lint",
     "start": "next start",
     "preview": "next build && next start -p 7007",
     "lint": "eslint .",
