@@ -1,6 +1,7 @@
 import type { Certification } from "../types/certifications";
 
 export const CERTIFICATIONS: Certification[] = [
+  /*
   {
     title: "Animations on the Web",
     issuer: "animations.dev",
@@ -161,4 +162,5 @@ export const CERTIFICATIONS: Certification[] = [
     credentialURL:
       "https://drive.google.com/file/d/1-NHhjKlQbhlcO7bpRue1XzDgDaudOf2N/view?usp=sharing",
   },
+  */
 ];

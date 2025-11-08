@@ -10,6 +10,11 @@ const ScrollTop = dynamic(() =>
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+      />
       <SiteHeader />
       <main className="max-w-screen overflow-x-hidden px-2">{children}</main>
       <SiteFooter />

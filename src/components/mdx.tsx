@@ -140,9 +140,9 @@ const components: MDXRemoteProps["components"] = {
         Manual
       </TabsTrigger>
 
-      {/* <TabsTrigger className="px-2.5" value="ncdai-cli">
-        <ChanhDaiMark className="size-2.5 w-auto translate-y-[0.5px]" />
-        <span className="-translate-y-[0.5px]">ncdai CLI</span>
+      {/* <TabsTrigger className="px-2.5" value="cronen-cli">
+        <MadhavMark className="size-2.5 w-auto translate-y-[0.5px]" />
+        <span className="-translate-y-[0.5px]">Cronen CLI</span>
       </TabsTrigger> */}
     </TabsList>
   ),

@@ -10,16 +10,14 @@ import {
   LetterTextIcon,
   MessageCircleMoreIcon,
   MoonStarIcon,
-  RssIcon,
   SunIcon,
-  TextIcon,
   TriangleDashedIcon,
   TypeIcon,
 } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { toast } from "sonner";
 
 import {
@@ -31,15 +29,14 @@ import {
   CommandList,
   CommandSeparator,
 } from "@/components/ui/command";
-import type { Post } from "@/features/blog/types/post";
 import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
 import { useSound } from "@/hooks/use-sound";
 import { cn } from "@/lib/utils";
 import { copyText } from "@/utils/copy";
 
-import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark";
-import { getWordmarkSVG } from "./chanhdai-wordmark";
 import { Icons } from "./icons";
+import { getMarkSVG, MadhavMark } from "./madhav-mark";
+import { getWordmarkSVG } from "./madhav-workmark";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 
@@ -52,24 +49,6 @@ type CommandLinkItem = {
   keywords?: string[];
   openInNewTab?: boolean;
 };
-
-const MENU_LINKS: CommandLinkItem[] = [
-  {
-    title: "Daifolio",
-    href: "/",
-    icon: ChanhDaiMark,
-  },
-  {
-    title: "Blog",
-    href: "/blog",
-    icon: RssIcon,
-  },
-  {
-    title: "Components",
-    href: "/components",
-    icon: Icons.react,
-  },
-];
 
 const DAIFOLIO_LINKS: CommandLinkItem[] = [
   {
@@ -121,7 +100,7 @@ const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => ({
   openInNewTab: true,
 }));
 
-export function CommandMenu({ posts }: { posts: Post[] }) {
+export function CommandMenu() {
   const router = useRouter();
 
   const { setTheme, resolvedTheme } = useTheme();
@@ -192,18 +171,6 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
     [playClick, setTheme]
   );
 
-  const { blogLinks, componentLinks } = useMemo(
-    () => ({
-      blogLinks: posts
-        .filter((post) => post.metadata?.category !== "components")
-        .map(postToCommandLinkItem),
-      componentLinks: posts
-        .filter((post) => post.metadata?.category === "components")
-        .map(postToCommandLinkItem),
-    }),
-    [posts]
-  );
-
   return (
     <>
       <Button
@@ -245,33 +212,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
 
           <CommandLinkGroup
             heading="Menu"
-            links={MENU_LINKS}
-            onLinkSelect={handleOpenLink}
-          />
-
-          <CommandSeparator />
-
-          <CommandLinkGroup
-            heading="Daifolio"
             links={DAIFOLIO_LINKS}
-            onLinkSelect={handleOpenLink}
-          />
-
-          <CommandSeparator />
-
-          <CommandLinkGroup
-            heading="Blog"
-            links={blogLinks}
-            fallbackIcon={TextIcon}
-            onLinkSelect={handleOpenLink}
-          />
-
-          <CommandSeparator />
-
-          <CommandLinkGroup
-            heading="Components"
-            links={componentLinks}
-            fallbackIcon={Icons.react}
             onLinkSelect={handleOpenLink}
           />
 
@@ -294,7 +235,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
                 );
               }}
             >
-              <ChanhDaiMark />
+              <MadhavMark />
               Copy Mark as SVG
             </CommandItem>
 
@@ -308,13 +249,6 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
             >
               <TypeIcon />
               Copy Logotype as SVG
-            </CommandItem>
-
-            <CommandItem
-              onSelect={() => handleOpenLink("/blog/chanhdai-brand")}
-            >
-              <TriangleDashedIcon />
-              Brand Guidelines
             </CommandItem>
 
             <CommandItem asChild>
@@ -455,7 +389,7 @@ function CommandMenuFooter() {
       <div className="flex h-10" />
 
       <div className="absolute inset-x-0 bottom-0 flex h-10 items-center justify-between gap-2 border-t bg-zinc-100/30 px-4 text-xs font-medium dark:bg-zinc-800/30">
-        <ChanhDaiMark className="size-6 text-muted-foreground" aria-hidden />
+        <MadhavMark className="size-6 text-muted-foreground" aria-hidden />
 
         <div className="flex shrink-0 items-center gap-2">
           <span>{ENTER_ACTION_LABELS[selectedCommandKind]}</span>
@@ -484,14 +418,4 @@ function CommandMenuKbd({ className, ...props }: React.ComponentProps<"kbd">) {
       {...props}
     />
   );
-}
-
-function postToCommandLinkItem(post: Post): CommandLinkItem {
-  const isComponent = post.metadata?.category === "components";
-
-  return {
-    title: post.metadata.title,
-    href: isComponent ? `/components/${post.slug}` : `/blog/${post.slug}`,
-    keywords: isComponent ? ["component"] : undefined,
-  };
 }

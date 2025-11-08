@@ -3,7 +3,7 @@
 import { PhoneIcon } from "lucide-react";
 
 import { useIsClient } from "@/hooks/use-is-client";
-import { decodePhoneNumber, formatPhoneNumber } from "@/utils/string";
+import { decodePhoneNumber } from "@/utils/string";
 
 import { IntroItem } from "./intro-item";
 
@@ -14,9 +14,7 @@ export function PhoneItem({ phoneNumber }: { phoneNumber: string }) {
   return (
     <IntroItem
       icon={PhoneIcon}
-      content={
-        isClient ? formatPhoneNumber(phoneNumberDecoded) : "[Phone protected]"
-      }
+      content={isClient ? phoneNumberDecoded : "[Phone Protected]"}
       href={isClient ? `tel:${phoneNumberDecoded}` : "#"}
     />
   );

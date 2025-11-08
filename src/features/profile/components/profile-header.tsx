@@ -1,36 +1,105 @@
+import Image from "next/image";
+
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import { USER } from "@/features/profile/data/user";
 import { cn } from "@/lib/utils";
 import { FlipSentences } from "@/registry/flip-sentences";
-
-import { PronounceMyName } from "./pronounce-my-name";
-import { VerifiedIcon } from "./verified-icon";
 
 export function ProfileHeader() {
   return (
     <div className="screen-line-after flex border-x border-edge">
       <div className="shrink-0 border-r border-edge">
         <div className="mx-0.5 my-[3px]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          {}
+          <Image
             className="size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none sm:size-40"
             alt={`${USER.displayName}'s avatar`}
             src={USER.avatar}
+            height={2000}
+            width={2000}
             fetchPriority="high"
           />
         </div>
 
-        <SimpleTooltip content="I'm from Việt Nam">
-          {/* Flag of Viet Nam */}
+        <SimpleTooltip content="I'm from India">
+          {/* Flag of India */}
           <svg
-            className="absolute top-0 -left-px h-8 sm:h-9"
-            viewBox="0 0 30 20"
             xmlns="http://www.w3.org/2000/svg"
+            className="absolute top-0 -left-px h-8 sm:h-12 sm:w-12"
+            width="40"
+            zoomAndPan="magnify"
+            viewBox="0 0 30 30.000001"
+            height="40"
+            preserveAspectRatio="xMidYMid meet"
+            version="1.0"
           >
-            <rect width="30" height="20" fill="#F00" />
-            <polygon
-              points="15,4 11.47,14.85 20.71,8.15 9.29,8.15 18.53,14.85"
-              fill="#FFEB00"
+            <defs>
+              <clipPath id="id1">
+                <path
+                  d="M 2.371094 18 L 27.773438 18 L 27.773438 23.921875 L 2.371094 23.921875 Z M 2.371094 18 "
+                  clipRule="nonzero"
+                />
+              </clipPath>
+              <clipPath id="id2">
+                <path
+                  d="M 2.371094 10 L 27.773438 10 L 27.773438 19 L 2.371094 19 Z M 2.371094 10 "
+                  clipRule="nonzero"
+                />
+              </clipPath>
+              <clipPath id="id3">
+                <path
+                  d="M 2.371094 5.050781 L 27.773438 5.050781 L 27.773438 11 L 2.371094 11 Z M 2.371094 5.050781 "
+                  clipRule="nonzero"
+                />
+              </clipPath>
+            </defs>
+            <g clipPath="url(#id1)">
+              <path
+                fill="rgb(7.449341%, 53.329468%, 3.138733%)"
+                d="M 2.375 21.019531 C 2.375 22.625 3.640625 23.921875 5.199219 23.921875 L 24.945312 23.921875 C 26.503906 23.921875 27.769531 22.625 27.769531 21.019531 L 27.769531 18.117188 L 2.375 18.117188 Z M 2.375 21.019531 "
+                fillOpacity="1"
+                fillRule="nonzero"
+              />
+            </g>
+            <g clipPath="url(#id2)">
+              <path
+                fill="rgb(93.328857%, 93.328857%, 93.328857%)"
+                d="M 2.375 10.859375 L 27.769531 10.859375 L 27.769531 18.117188 L 2.375 18.117188 Z M 2.375 10.859375 "
+                fillOpacity="1"
+                fillRule="nonzero"
+              />
+            </g>
+            <g clipPath="url(#id3)">
+              <path
+                fill="rgb(100%, 59.999084%, 19.999695%)"
+                d="M 27.769531 10.859375 L 27.769531 7.957031 C 27.769531 6.351562 26.503906 5.050781 24.945312 5.050781 L 5.199219 5.050781 C 3.640625 5.050781 2.375 6.351562 2.375 7.957031 L 2.375 10.859375 Z M 27.769531 10.859375 "
+                fillOpacity="1"
+                fillRule="nonzero"
+              />
+            </g>
+            <path
+              fill="rgb(0%, 0%, 50.19989%)"
+              d="M 17.894531 14.488281 C 17.894531 14.871094 17.820312 15.242188 17.679688 15.597656 C 17.535156 15.953125 17.332031 16.269531 17.066406 16.539062 C 16.804688 16.8125 16.496094 17.023438 16.152344 17.167969 C 15.804688 17.316406 15.445312 17.390625 15.074219 17.390625 C 14.699219 17.390625 14.339844 17.316406 13.992188 17.167969 C 13.648438 17.023438 13.34375 16.8125 13.078125 16.539062 C 12.8125 16.269531 12.609375 15.953125 12.464844 15.597656 C 12.324219 15.242188 12.25 14.871094 12.25 14.488281 C 12.25 14.101562 12.324219 13.730469 12.464844 13.375 C 12.609375 13.019531 12.8125 12.707031 13.078125 12.433594 C 13.34375 12.164062 13.648438 11.953125 13.992188 11.804688 C 14.339844 11.65625 14.699219 11.585938 15.074219 11.585938 C 15.445312 11.585938 15.804688 11.65625 16.152344 11.804688 C 16.496094 11.953125 16.804688 12.164062 17.066406 12.433594 C 17.332031 12.707031 17.535156 13.019531 17.679688 13.375 C 17.820312 13.730469 17.894531 14.101562 17.894531 14.488281 Z M 17.894531 14.488281 "
+              fillOpacity="1"
+              fillRule="nonzero"
+            />
+            <path
+              fill="rgb(93.328857%, 93.328857%, 93.328857%)"
+              d="M 17.1875 14.488281 C 17.1875 14.777344 17.136719 15.054688 17.027344 15.320312 C 16.921875 15.585938 16.765625 15.824219 16.570312 16.027344 C 16.371094 16.230469 16.140625 16.390625 15.882812 16.5 C 15.621094 16.609375 15.351562 16.664062 15.074219 16.664062 C 14.792969 16.664062 14.523438 16.609375 14.261719 16.5 C 14.003906 16.390625 13.773438 16.230469 13.578125 16.027344 C 13.378906 15.824219 13.226562 15.585938 13.117188 15.320312 C 13.011719 15.054688 12.957031 14.777344 12.957031 14.488281 C 12.957031 14.199219 13.011719 13.921875 13.117188 13.65625 C 13.226562 13.386719 13.378906 13.152344 13.578125 12.949219 C 13.773438 12.742188 14.003906 12.585938 14.261719 12.476562 C 14.523438 12.367188 14.792969 12.308594 15.074219 12.308594 C 15.351562 12.308594 15.621094 12.367188 15.882812 12.476562 C 16.140625 12.585938 16.371094 12.742188 16.570312 12.949219 C 16.765625 13.152344 16.921875 13.386719 17.027344 13.65625 C 17.136719 13.921875 17.1875 14.199219 17.1875 14.488281 Z M 17.1875 14.488281 "
+              fillOpacity="1"
+              fillRule="nonzero"
+            />
+            <path
+              fill="rgb(39.99939%, 39.99939%, 70.199585%)"
+              d="M 15.074219 12.308594 L 15.175781 13.953125 L 15.882812 12.476562 L 15.367188 14.035156 L 16.570312 12.949219 L 15.511719 14.183594 L 17.027344 13.65625 L 15.589844 14.382812 L 17.1875 14.488281 L 15.589844 14.59375 L 17.027344 15.320312 L 15.511719 14.789062 L 16.570312 16.027344 L 15.367188 14.941406 L 15.882812 16.5 L 15.175781 15.023438 L 15.074219 16.664062 L 14.96875 15.023438 L 14.261719 16.5 L 14.777344 14.941406 L 13.574219 16.027344 L 14.632812 14.789062 L 13.117188 15.320312 L 14.554688 14.59375 L 12.957031 14.488281 L 14.554688 14.382812 L 13.117188 13.65625 L 14.632812 14.183594 L 13.574219 12.949219 L 14.777344 14.035156 L 14.261719 12.476562 L 14.96875 13.953125 Z M 15.074219 12.308594 "
+              fillOpacity="1"
+              fillRule="nonzero"
+            />
+            <path
+              fill="rgb(0%, 0%, 50.19989%)"
+              d="M 15.777344 14.488281 C 15.777344 14.6875 15.707031 14.859375 15.570312 15 C 15.433594 15.140625 15.265625 15.214844 15.074219 15.214844 C 14.878906 15.214844 14.710938 15.140625 14.574219 15 C 14.4375 14.859375 14.367188 14.6875 14.367188 14.488281 C 14.367188 14.289062 14.4375 14.117188 14.574219 13.972656 C 14.710938 13.832031 14.878906 13.761719 15.074219 13.761719 C 15.265625 13.761719 15.433594 13.832031 15.570312 13.972656 C 15.707031 14.117188 15.777344 14.289062 15.777344 14.488281 Z M 15.777344 14.488281 "
+              fillOpacity="1"
+              fillRule="nonzero"
             />
           </svg>
         </SimpleTooltip>
@@ -42,35 +111,20 @@ export function ProfileHeader() {
             "flex grow items-end pb-1 pl-4",
             "bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] [--pattern-foreground:var(--color-edge)]/56"
           )}
-        >
-          <div className="line-clamp-1 font-mono text-xs text-zinc-300 select-none max-sm:hidden dark:text-zinc-800">
-            {"text-3xl "}
-            <span className="inline dark:hidden">text-zinc-950</span>
-            <span className="hidden dark:inline">text-zinc-50</span>
-            {" font-medium"}
-          </div>
-        </div>
+        ></div>
 
         <div className="border-t border-edge">
           <h1 className="flex items-center pl-4 text-3xl font-semibold">
             {USER.displayName}
             &nbsp;
-            <SimpleTooltip content="Verified">
-              <VerifiedIcon className="size-[0.6em] translate-y-px text-info select-none" />
-            </SimpleTooltip>
-            {USER.namePronunciationUrl && (
-              <>
-                &nbsp;
-                <PronounceMyName
-                  className="translate-y-px"
-                  namePronunciationUrl={USER.namePronunciationUrl}
-                />
-              </>
-            )}
+            <span className="text-cyan-300">🗲</span>
           </h1>
 
           <div className="h-12 border-t border-edge py-1 pl-4 sm:h-auto">
-            <FlipSentences sentences={USER.flipSentences} />
+            <div className="flex items-center">
+              <FlipSentences sentences={USER.flipSentences} />
+              <span className="text-muted-foreground">&nbsp; @ Aimver</span>
+            </div>
           </div>
         </div>
       </div>

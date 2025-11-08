@@ -1,5 +1,3 @@
-// Thanks https://www.kibo-ui.com/components/contribution-graph
-
 "use client";
 
 import type { Day as WeekDay } from "date-fns";

@@ -4,12 +4,12 @@ import { RepeatIcon } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import React, { useCallback, useEffect, useState } from "react";
 
-import { ChanhDaiMark } from "@/components/chanhdai-mark";
+import { MadhavMark } from "@/components/madhav-mark";
 import { Button } from "@/components/ui/button";
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import { AppleHelloVietnameseEffect } from "@/registry/apple-hello-effect";
 
-const layers = ["xin-chao", "chanhdai-wordmark"] as const;
+const layers = ["madhav", "madhav-wordmark"] as const;
 
 export function Hello() {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -38,7 +38,7 @@ export function Hello() {
           key={`layer-${currentIndex}`}
           className="flex items-center justify-center text-black dark:text-white"
         >
-          {layers[currentIndex] === "xin-chao" && (
+          {layers[currentIndex] === "madhav" && (
             <AppleHelloVietnameseEffect
               className="h-10 sm:h-16"
               exit={{ opacity: 0, scale: 0.8 }}
@@ -55,14 +55,14 @@ export function Hello() {
             />
           )} */}
 
-          {layers[currentIndex] === "chanhdai-wordmark" && (
+          {layers[currentIndex] === "madhav-wordmark" && (
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.5 }}
             >
-              <ChanhDaiMark className="h-12 sm:h-16" />
+              <MadhavMark className="h-12 sm:h-16" />
             </motion.div>
           )}
         </div>

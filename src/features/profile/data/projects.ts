@@ -2,199 +2,84 @@ import type { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
-    id: "react-wheel-picker",
-    title: "React Wheel Picker",
+    id: "netprobe",
+    title: "NetProbe Mk.II",
     period: {
-      start: "05.2025",
+      start: "04.2024",
     },
-    link: "https://react-wheel-picker.chanhdai.com",
+    link: "https://github.com/theoneandonlyshadow/NetProbe",
     skills: [
       "Open Source",
-      "React",
-      "TypeScript",
-      "Monorepo",
-      "Turborepo",
+      "JavaScript",
       "pnpm-workspace",
       "Package Publishing",
-      "NPM Registry",
-      "GitHub Actions",
+      "System Tray App",
     ],
-    description: `iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support. / Backed by [▲Vercel OSS Program](https://vercel.com/blog/summer-2025-oss-program#react-wheel-picker)
-- 📱 Natural touch scrolling with smooth inertia effect
-- 🖱️ Mouse drag and scroll support for desktop
-- 🔄 Infinite loop scrolling
-- 🎨 Unstyled components for complete style customization
-- ⚡️ Easy installation via shadcn CLI
+    description: `NetProbe Mk.2 is a system tray application that monitors internet connectivity, logs connection status changes, and provides utility features like clearing DNS cache and viewing logs. Built using Node.js, it is designed to work seamlessly on Windows, macOS, and Linux.
 `,
-    logo: "https://assets.chanhdai.com/images/project-logos/react-wheel-picker.svg",
+    logo: "https://ik.imagekit.io/rwjhjllft/netprobe?updatedAt=1762453472197",
     isExpanded: true,
   },
   {
-    id: "chanhdaidotcom",
-    title: "chanhdai.com",
+    id: "vermilion",
+    title: "Vermilion AI",
     period: {
       start: "01.2025",
     },
-    link: "https://github.com/ncdai/chanhdai.com",
-    skills: [
-      "Open Source",
-      "Next.js 15",
-      "Tailwind CSS v4",
-      "Radix UI",
-      "Motion",
-      "shadcn/ui",
-      "Component Registry",
-      "Vercel",
-    ],
-    description: `A minimal, pixel-perfect dev portfolio, component registry, and blog.
+    link: "https://ik.imagekit.io/rwjhjllft/vermilion?updatedAt=1762453539995",
+    skills: ["Open Source", "AI"],
+    description: `Vermilion is an Artificial Intelligence that automates tasks under your OS. Vermilion is used just like any other AI all the while having unrestricted data.
 
 **Featured:**
 
-- Clean & modern design
+- Finetuned Deepseek R1 Model with Cronen dataset.
 - Light/Dark themes
-- vCard integration
-- SEO optimized ([JSON-LD schema](https://json-ld.org), sitemap, robots)
-- AI-ready with [/llms.txt](https://llmstxt.org)
-- Spam-protected email
-- Installable as PWA
-
-**Blog:**
-
-- Supports MDX & Markdown
-- Raw \`.mdx\` endpoints for AI readability
-- Syntax highlighting for clear code presentation
-- Dynamic OG images for rich link previews
-- RSS feed for easy content distribution
-
-**Registry:**
-
-- Easily build and distribute reusable components, hooks, and pages using a custom registry powered by the [shadcn CLI](https://ui.shadcn.com/docs/cli).
-- Each entry is well-documented and includes:
-  - Live preview & code snippets
-  - Beautiful, readable code blocks
-  - One-click command blocks (pnpm, npm, yarn, bun)`,
-    logo: "https://assets.chanhdai.com/images/project-logos/chanhdaidotcom.svg",
+- JavaFX UI
+- Python Tensorflow optimized
+- AI-ready with XS1 Command Innjection
+- Task Automation Workflow
+- ≥ 95% XS1 Accuracy.
+- ≤ 1.2 seconds Model Inference Time.
+- ≤ 500MB RAM, ≤ 15% CPU on idle
+- ≤ 1GB, ≤ 35% CPU under load
+- ≤ 2% XS1 Cmd Injection Error Rate
+`,
+    logo: "https://ik.imagekit.io/rwjhjllft/vermilion?updatedAt=1762453539995",
   },
   {
-    id: "quaricdotcom",
-    title: "quaric.com",
+    id: "usasiaaeroservices",
+    title: "US Asian Aeroservices",
     period: {
-      start: "03.2024",
+      start: "10.2025",
     },
-    link: "https://quaric.com",
-    skills: [
-      "Company Project",
-      "Next.js 15",
-      "Tailwind CSS v3",
-      "shadcn/ui",
-      "Strapi 5",
-      "VNPAY-QR",
-      "Docker",
-      "Docker Compose",
-      "NGINX",
-    ],
-    logo: "https://assets.chanhdai.com/images/project-logos/quaricdotcom.svg",
+    link: "https://usasiaaeroservices.com",
+    skills: ["Freelance"],
+    description: `Cutting edge UI made with Launch UI, ShadCN and Aceternity UI. Made it for a friend.
+- Showcases military grade drones.`,
+    logo: "https://ik.imagekit.io/rwjhjllft/usasianaeroservices?updatedAt=1762454558266",
   },
   {
-    id: "zadark",
-    title: "ZaDark",
+    id: "xpr",
+    title: "Express Relay",
     period: {
-      start: "01.2022",
+      start: "11.2024",
     },
-    link: "https://zadark.com",
-    skills: [
-      "Pet Project",
-      "Open Source",
-      "Browser Extension",
-      "CLI",
-      "Docusaurus 3",
-    ],
-    description: `ZaDark adds Dark Mode, anti-peeking, customizable fonts, backgrounds, and more to Zalo Web and PC.
-- Earned 10M+ VND in net sales from a paid Safari Extension
-- 80k+ downloads on SourceForge (awarded Community Leader badge by SourceForge)
-- 20k+ active users via Chrome Web Store (as of Sep 2025)
-- Bronze Medal — 10th Design, Manufacturing, and Application Award 2022`,
-    logo: "https://assets.chanhdai.com/images/project-logos/zadark.svg",
-  },
-  {
-    id: "qabox",
-    title: "QABox",
-    period: {
-      start: "07.2023",
-      end: "07.2023",
-    },
-    link: "https://github.com/ncdai/qabox",
+    link: "https://github.com/theoneandonlyshadow/TheRealXPR",
     skills: [
       "University Project",
-      "PHP",
-      "MySQL",
-      "MVC",
+      "Next.js",
+      "MongoDB",
+      "ShadCN",
       "Docker",
-      "Docker Compose",
+      "Tailwind CSS",
+      "FOSS by MaxTac",
+      "Cloudflare D1",
+      "Cloudflare R2",
     ],
     description:
-      "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/ncdai/qabox",
+      "- File sharing web app with storage connecting to a cluster of storage networks.",
   },
-  {
-    id: "taskbox",
-    title: "TaskBox",
-    period: {
-      start: "07.2023",
-      end: "07.2023",
-    },
-    link: "https://github.com/ncdai/taskbox",
-    skills: [
-      "University Project",
-      "PHP",
-      "MySQL",
-      "MVC",
-      "Docker",
-      "Docker Compose",
-    ],
-    description:
-      "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/ncdai/taskbox",
-  },
-  {
-    id: "daichat-app",
-    title: "DaiChat App",
-    period: {
-      start: "07.2020",
-      end: "07.2020",
-    },
-    link: "https://www.youtube.com/watch?v=H5U3J_W1low",
-    skills: ["University Project", "Java", "Java Swing", "Java Networking"],
-    description: `- Course: Java Application Programming — FIT@HCMUS
-- Requirement: Developed a real-time chat application using Java technologies
-- Project Score: 10/10
-- Source Code:
-  - Server: https://github.com/ncdai/ltudjava-summer2020-chatapp_server
-  - Client: https://github.com/ncdai/ltudjava-summer2020-chatapp_client`,
-  },
-  {
-    id: "qlsv-app",
-    title: "QLSV App",
-    period: {
-      start: "06.2020",
-      end: "06.2020",
-    },
-    link: "https://www.youtube.com/watch?v=tG9SZEBrwog",
-    skills: ["University Project", "Java", "Java Swing", "Hibernate", "MySQL"],
-    description: `- Course: Java Application Programming — FIT@HCMUS
-- Requirement: Built a student management system with role-based functionalities using Java technologies
-- Project Score: 10/10
-- Source Code: https://github.com/ncdai/ltudjava-summer2020-hibernate`,
-  },
-  {
-    id: "penphy",
-    title: "Penphy",
-    period: {
-      start: "01.2019",
-      end: "08.2019",
-    },
-    link: "https://www.youtube.com/watch?v=EdU7rUO-UA4",
-    skills: ["Startup Project", "JavaScript", "React Native"],
-    description: "2nd Prize — Business Startup Competition 2019",
-  },
+  /*
   {
     id: "unlimitedstudy",
     title: "UnlimitedStudy",
@@ -261,4 +146,5 @@ export const PROJECTS: Project[] = [
 - 1st Prize — Can Tho City Youth and Children's Creativity Contest 2016
 - Consolation Prize — Can Tho City Young Informatics Contest 2016`,
   },
+  */
 ];
