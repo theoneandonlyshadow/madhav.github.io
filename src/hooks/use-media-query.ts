@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 
 export function useMediaQuery(query: string) {
-  const [value, setValue] = useState(false);
+  const [value, setValue] = useState(() => {
+    if (typeof window !== "undefined") {
+      return matchMedia(query).matches;
+    }
+    return false;
+  });
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -16,8 +21,6 @@ export function useMediaQuery(query: string) {
       },
       { signal }
     );
-
-    setValue(result.matches);
 
     return () => {
       abortController.abort();

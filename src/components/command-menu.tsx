@@ -11,7 +11,6 @@ import {
   MessageCircleMoreIcon,
   MoonStarIcon,
   SunIcon,
-  TriangleDashedIcon,
   TypeIcon,
 } from "lucide-react";
 import Image from "next/image";

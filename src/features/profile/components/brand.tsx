@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
 
 import { MadhavMark } from "@/components/madhav-mark";
-import { MadhavWordMark } from "@/components/madhav-workmark";
 
+// import { MadhavWordMark } from "@/components/madhav-workmark";
 import { Panel, PanelHeader, PanelTitle } from "./panel";
 
 const BrandContextMenu = dynamic(() =>
