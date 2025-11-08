@@ -43,8 +43,9 @@ export function SiteFooter() {
             >
               Cronen UI
             </Link> */}
-            <i className="devicon-nextjs-original-wordmark text-5xl"></i>
-
+            <span className="flex text-muted-foreground transition-colors hover:text-foreground">
+              <i className="devicon-nextjs-original-wordmark text-5xl"></i>
+            </span>
             <Separator />
 
             <span>&</span>
@@ -52,15 +53,7 @@ export function SiteFooter() {
             <Separator />
 
             <span className="flex text-muted-foreground transition-colors hover:text-foreground">
-              <Image
-                src={
-                  "https://ik.imagekit.io/rwjhjllft/cloudflare?updatedAt=1762509227800"
-                }
-                height={20000}
-                width={20000}
-                alt={"cloudflare"}
-                className="h-5 w-auto"
-              />
+              <i className="devicon-cloudflare-plain-wordmark text-5xl"></i>
               <span className="sr-only">Cloudflare Protected</span>
             </span>
           </div>
