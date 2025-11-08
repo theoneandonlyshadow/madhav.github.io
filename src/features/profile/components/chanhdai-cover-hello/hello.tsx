@@ -2,12 +2,11 @@
 
 import { RepeatIcon } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { MadhavMark } from "@/components/madhav-mark";
 import { Button } from "@/components/ui/button";
 import { SimpleTooltip } from "@/components/ui/tooltip";
-import { AppleHelloVietnameseEffect } from "@/registry/apple-hello-effect";
 
 const layers = ["madhav", "madhav-wordmark"] as const;
 
@@ -25,12 +24,6 @@ export function Hello() {
     }
   }, []);
 
-  const nextAnimation = useCallback(() => {
-    setTimeout(() => {
-      setCurrentIndex((prev) => (prev + 1) % layers.length);
-    }, 500);
-  }, []);
-
   return (
     <>
       <AnimatePresence mode="wait" initial={false}>
@@ -38,14 +31,6 @@ export function Hello() {
           key={`layer-${currentIndex}`}
           className="flex items-center justify-center text-black dark:text-white"
         >
-          {layers[currentIndex] === "madhav" && (
-            <AppleHelloVietnameseEffect
-              className="h-10 sm:h-16"
-              exit={{ opacity: 0, scale: 0.8 }}
-              onAnimationComplete={nextAnimation}
-            />
-          )}
-
           {/* {layers[currentIndex] === "hello" && (
             <AppleHelloEnglishEffect
               className="h-10 sm:h-16"
