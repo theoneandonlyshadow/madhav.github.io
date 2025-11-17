@@ -30,17 +30,14 @@ export const USER: User = {
   about: `
 I'm Madhav Nair — Associate Software Engineer @ Aimver
 
-21 y/o dev. Accidentally built something so clean IBM Research picked it up.
-Now I ship production code full-time at Aimver.
+I build full-stack products across TypeScript, Next.js, PostgreSQL, and cloud that stay fast no matter how hard you push them.
+The stuff I ship ends up in real user's hands, so polish and stability actually matter.
+From UI craft to infra wiring, I keep the entire stack tight.
+I built internal tools, backend services, and my own projects since 11th grade.
+I have worked under pressure so deadlines don’t scare me.
+Production quality is the bar, not the goal.
 
-What I've Done:
-- Software Engineer @ Aimver (2025 - now)
-- Shipped APIs and hardened user security for 5.5k+ monthly users (2021 - 2024)
-- Led 20+ interns as Tech Lead (2024 - 2025)
-- Freelanced for startups that actually launched
-- Git game strong
-
-Born to code. Forced to sleep.
+Drop a hi in my email. I respond quick.
   `,
   avatar: "https://ik.imagekit.io/rwjhjllft/madhav.jpg?updatedAt=1762443850444",
   ogImage:
