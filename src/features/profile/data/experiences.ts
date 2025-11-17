@@ -15,7 +15,7 @@ export const EXPERIENCES: Experience[] = [
         },
         employmentType: "Full-time",
         icon: "code",
-        description: `- Develop [Aimver Website](https://aimver.com) and [JustEase](https://madhavn.com).
+        description: `- Develop [Aimver](https://aimver.com) and [JustEase](https://justease.live/).
 - Develop and maintain core features to enhance functionality and user experience.
 - Ensure UI/UX consistency and adherence to standards.
 - Implement robust frontend solutions for web and mobile platforms.
@@ -85,7 +85,7 @@ export const EXPERIENCES: Experience[] = [
         description: `- Built [Vermilion](https://github.com/maxtac/vermilion) AI. A fully uncensored and unbiased AI with the power of automating tasks within your operating system.
 - Developed a huge red teaming dataset [Cronen](https://github.com/maxtac/vermilion) which is used to build Vermilion AI. Recognized by IBM Research.
 - Created an internet connection monitor [NetProbe](https://github.com/maxtac/netprobe).
-- Created a free file sharing service [Express Relay](https://github.com/maxtac/express-relay).
+- Created a free file sharing service [Express Relay](https://github.com/maxtac/express-relay) [ALPHA].
 - Designed several POC applications.
 `,
         icon: "code",

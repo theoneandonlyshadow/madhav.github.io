@@ -48,11 +48,11 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "usasiaaeroservices",
-    title: "US Asian Aeroservices",
+    title: "US Asian Aeroservices [ALPHA]",
     period: {
       start: "10.2025",
     },
-    link: "https://usasiaaeroservices.com",
+    link: "https://usasianaeroservices.pages.dev",
     skills: ["Freelance"],
     description: `Cutting edge UI made with Launch UI, ShadCN and Aceternity UI. Made it for a friend.
 - Showcases military grade drones.`,
@@ -60,11 +60,11 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "xpr",
-    title: "Express Relay",
+    title: "Express Relay [ALPHA]",
     period: {
       start: "11.2024",
     },
-    link: "https://github.com/theoneandonlyshadow/TheRealXPR",
+    link: "https://xpr.pages.dev",
     skills: [
       "University Project",
       "Next.js",
@@ -76,8 +76,61 @@ export const PROJECTS: Project[] = [
       "Cloudflare D1",
       "Cloudflare R2",
     ],
-    description:
-      "- File sharing web app with storage connecting to a cluster of storage networks.",
+    description: `- Upload. Share. Download with no ads and free storage.
+- Made with Next.js, MongoDB, ShadCN, Tailwind CSS, Cloudflare D1, Cloudflare R2 and Docker.
+- Workflow:
+  - Frontend:
+    - User enteres website.
+    - User selects files to upload (Unlimited files but 7Gb per upload).
+    - User clicks upload.
+  - Backend (<1.5s response):
+    - Fetches cache that was computed from last user upload. This cache data stores all available storage of all clusters.
+    - The highest storage cluster is selected for upload.
+    - Metadata of the files such as name, size, upload date and time are fetched.
+    -  This metadata is stored in Cloudflare D1.
+    - Files are stored in this storage cluster.
+    - In case of failure to upload to any of available storage clusters, we upload these files into Cloudflare R2.
+  - Frontend:
+    - User is redirected to success page.
+    - Displays the 6 digit alpha numeric code and option to delete the uploaded files.
+    - User can choose to share this code to anyone to download the same files.
+    - User is presented with XPR-WSS (a window below this success page) to initiate communication with the ones this short code was shared to (Max 20 users allowed).
+    - Deleting the uploaded files will invalidate this chat session.
+    - In any case, 7 days after an upload, these files and their collected metadata are automatically deleted from the storage clusters.
+- Other features:
+  - History tab: Users can check their upload history that shows the amount of files, size, date, time, download link, shortcode and delete files.
+  - MaxTac tab: Users can check out our extended FOSS products.
+`,
+  },
+  {
+    id: "rd",
+    title: "Relay Driver [ALPHA]",
+    period: {
+      start: "11.2025",
+    },
+    link: "https://github.com/theoneandonlyshadow/RelayDriver",
+    skills: [
+      "FOSS By MaxTac",
+      "Rust",
+      "Cloudflare D2",
+      "Cloudflare R1",
+      "Docker",
+      "egui",
+    ],
+    description: `- Upload. Share. Download at warp speed right in your desktop.
+- Made with egui, Rust and Cloudflare.
+- Features:
+  - 4 main features: Upload, Receive, History and Right Click to Upload.
+  - Other than that, the user is presented with Upload, Receive, History, Logs, Right Click to Upload, Recent Activity, System Info, Donate, Update, Quit.    - Upload: upon clicking, a native file explorer is opened to choose files to upload.
+  - Receive: upon clicking, a window opens prompting a 6 digit alpha numeric code to download intended files.
+  - History: upon clicking, a window opens showing all your upload and receive history with detailed report.
+  - Logs: upon clicking, a window opens showing all your history made within this Relay Driver application (Locally stored. Not collected or backed up).
+  - Right Click to Upload: enabling this registers an option to upload directly to XPR Cloud inside your file explorer options for ease of upload. Simply right click on a file and click on Show More Options and find "Upload to XPR Cloud".   - Recent Activity: shows your recent 7 recent uploads.
+  - System Info: displays system info.
+  - Donate: gimme money.
+  - Update: checks for app update. Disabled by default. Checks for update at app startup.
+  - Quit: quits the app completely. Disabled when a process is running.
+      `,
   },
   /*
   {

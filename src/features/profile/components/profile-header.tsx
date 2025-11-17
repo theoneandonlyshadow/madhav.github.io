@@ -116,8 +116,6 @@ export function ProfileHeader() {
         <div className="border-t border-edge">
           <h1 className="flex items-center pl-4 text-3xl font-semibold">
             {USER.displayName}
-            &nbsp;
-            <span className="text-cyan-300">🗲</span>
           </h1>
 
           <div className="h-12 border-t border-edge py-1 pl-4 sm:h-auto">

@@ -28,7 +28,19 @@ export const USER: User = {
     },
   ],
   about: `
-Hello, World! I'm Madhav Nair.
+I'm Madhav Nair — Associate Software Engineer @ Aimver
+
+21 y/o dev. Accidentally built something so clean IBM Research picked it up.
+Now I ship production code full-time at Aimver.
+
+What I've Done:
+- Software Engineer @ Aimver (2025 - now)
+- Shipped APIs and hardened user security for 5.5k+ monthly users (2021 - 2024)
+- Led 20+ interns as Tech Lead (2024 - 2025)
+- Freelanced for startups that actually launched
+- Git game strong
+
+Born to code. Forced to sleep.
   `,
   avatar: "https://ik.imagekit.io/rwjhjllft/madhav.jpg?updatedAt=1762443850444",
   ogImage:
