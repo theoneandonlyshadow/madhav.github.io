@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "01.2025",
     },
-    link: "https://ik.imagekit.io/rwjhjllft/vermilion?updatedAt=1762453539995",
+    link: "",
     skills: ["Open Source", "AI"],
     description: `Vermilion is an Artificial Intelligence that automates tasks under your OS. Vermilion is used just like any other AI all the while having unrestricted data.
 
@@ -54,7 +54,7 @@ export const PROJECTS: Project[] = [
     },
     link: "https://usasianaeroservices.pages.dev",
     skills: ["Freelance"],
-    description: `Cutting edge UI made with Launch UI, ShadCN and Aceternity UI. Made it for a friend.
+    description: `Cutting edge UI made with Launch UI, ShadCN and Aceternity UI. Made it for a friend. Development kept on hold due to inadequate drone data.
 - Showcases military grade drones.`,
     logo: "https://ik.imagekit.io/rwjhjllft/usasianaeroservices?updatedAt=1762454558266",
   },
