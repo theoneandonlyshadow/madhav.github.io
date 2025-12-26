@@ -21,6 +21,25 @@ export const PROJECTS: Project[] = [
     isExpanded: true,
   },
   {
+    id: "stackon",
+    title: "Stackon Innovations",
+    period: {
+      start: "11.2025",
+    },
+    link: "https://stackon.in",
+    skills: [
+      "Design & Development",
+      "Three.js 3D Website Development",
+      "Next.js Website Development",
+      "Single Page Application",
+      "Content Management System",
+    ],
+    description: `Stackon Innovations is a freelancing startup founded by Nygil Benny. He designed the main website, I developed it and gave it life. I manage CI/CD, Core development, Databases and Hosting for clients that reach out to us. We have taken 3D SPA, Application Development, CMS, Static based and many more clients as of now.
+`,
+    logo: "https://ik.imagekit.io/stackon/Stackon/common/image.png",
+    isExpanded: true,
+  },
+  {
     id: "vermilion",
     title: "Vermilion AI",
     period: {
@@ -48,7 +67,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "usasiaaeroservices",
-    title: "US Asian Aeroservices [ALPHA]",
+    title: "US Asian Aeroservices [in dev]",
     period: {
       start: "10.2025",
     },
@@ -104,7 +123,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "rd",
-    title: "Relay Driver [ALPHA]",
+    title: "Relay Driver [in dev]",
     period: {
       start: "11.2025",
     },
