@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
     ],
     description: `Stackon Innovations is a freelancing startup founded by Nygil Benny. He designed the main website, I developed it and gave it life. I manage CI/CD, Core development, Databases and Hosting for clients that reach out to us. We have taken 3D SPA, Application Development, CMS, Static based and many more clients as of now.
 `,
-    logo: "https://ik.imagekit.io/stackon/Stackon/common/image.png",
+    logo: "https://ik.imagekit.io/stackon/Stackon/common/logo.ico",
     isExpanded: true,
   },
   {
