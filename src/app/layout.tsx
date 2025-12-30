@@ -1,7 +1,9 @@
+// eslint-disable-next-line simple-import-sort/imports
 import "@/styles/globals.css";
 
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { WebSite, WithContext } from "schema-dts";
 
 import { Providers } from "@/components/providers";
@@ -125,6 +127,7 @@ export default function RootLayout({
       </head>
 
       <body>
+        <GoogleAnalytics gaId={process.env.GA_ID || ""} />
         <Providers>{children}</Providers>
       </body>
     </html>
