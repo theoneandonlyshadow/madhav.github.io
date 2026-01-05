@@ -45,9 +45,9 @@ export const PROJECTS: Project[] = [
     period: {
       start: "01.2025",
     },
-    link: "",
+    link: "https://vermilion.madhavn.com",
     skills: ["Open Source", "AI"],
-    description: `Vermilion is an Artificial Intelligence that automates tasks under your OS. Vermilion is used just like any other AI all the while having unrestricted data.
+    description: `Vermilion is an Artificial Intelligence that automates tasks under your OS. Vermilion is used just like any other AI all the while having unrestricted access to information regardless of safety guardrails.
 
 **Featured:**
 
