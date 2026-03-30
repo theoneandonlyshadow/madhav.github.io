@@ -1,6 +1,5 @@
 // eslint-disable-next-line simple-import-sort/imports
 import "@/styles/globals.css";
-import Script from "next/script";
 
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
