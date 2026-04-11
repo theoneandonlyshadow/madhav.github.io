@@ -34,14 +34,13 @@ I build full-stack products across TypeScript, Next.js, PostgreSQL, and cloud th
 The stuff I ship ends up in real user's hands, so polish and stability actually matter.
 From UI craft to infra wiring, I keep the entire stack tight.
 I built internal tools, backend services, and my own projects since 11th grade.
-I have worked under pressure so deadlines don’t scare me.
+I have worked under pressure so deadlines don't scare me.
 Production quality is the bar, not the goal.
 
 Drop a hi in my email. I respond quick.
   `,
-  avatar: "https://ik.imagekit.io/rwjhjllft/madhav.jpg?updatedAt=1762443850444",
-  ogImage:
-    "https://ik.imagekit.io/rwjhjllft/madhav.jpg?updatedAt=1762443850444",
+  avatar: "https://ik.imagekit.io/rwjhjllft/avatar.jpg",
+  ogImage: "https://ik.imagekit.io/rwjhjllft/ogImage.png",
   keywords: [
     "madhav",
     "madhav nair",

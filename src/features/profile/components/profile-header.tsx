@@ -9,10 +9,10 @@ export function ProfileHeader() {
   return (
     <div className="screen-line-after flex border-x border-edge">
       <div className="shrink-0 border-r border-edge">
-        <div className="mx-0.5 my-[3px]">
-          {}
+        {/* Profile Picture */}
+        <div className="mx-0.5 my-[3px] h-35 w-35">
           <Image
-            className="size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none sm:size-40"
+            className="h-35 w-35 rounded-full object-scale-down ring-1 ring-border ring-offset-2 ring-offset-background select-none"
             alt={`${USER.displayName}'s avatar`}
             src={USER.avatar}
             height={2000}
