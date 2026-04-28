@@ -15,7 +15,7 @@ export const EXPERIENCES: Experience[] = [
         },
         employmentType: "Full-time",
         icon: "code",
-        description: `- Develop [Aimver](https://aimver.com), [JustEase AI](https://dharmabot.ai/) and [Scaleberg](https://scaleberg.com).
+        description: `- Develop [Aimver](https://aimver.com), [JustEase AI](https://dharmabot.ai/), [Scaleberg](https://scaleberg.com) and The Corvus Project.
 - Develop and maintain core features to enhance functionality and user experience.
 - Ensure UI/UX consistency and adherence to standards.
 - Implement robust frontend solutions for web and mobile platforms.
