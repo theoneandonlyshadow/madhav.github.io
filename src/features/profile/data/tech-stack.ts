@@ -64,7 +64,7 @@ export const TECH_STACK: TechStack[] = [
   },
   {
     key: "express-original",
-    title: "Electron",
+    title: "Express.js",
     href: "https://expressjs.com/",
     categories: ["Framework"],
   },
