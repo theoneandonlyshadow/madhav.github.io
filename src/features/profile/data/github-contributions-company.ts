@@ -5,6 +5,21 @@ type GitHubContributionsResponseCompany = {
   contributions: Activity[];
 };
 
+function getLast365Days(contributions: Activity[]) {
+  const today = new Date();
+  const startDate = new Date(today);
+  startDate.setDate(today.getDate() - 364);
+
+  const filtered = contributions
+    .filter((activity) => {
+      const activityDate = new Date(activity.date);
+      return activityDate >= startDate && activityDate <= today;
+    })
+    .slice(-365);
+
+  return filtered.length > 0 ? filtered : contributions.slice(-365);
+}
+
 export async function getGitHubContributionsCompany() {
   const res = await fetch(
     `https://github-contributions-api.jogruber.de/v4/${GITHUB_USERNAME_COMPANY}?y=last`,
@@ -13,5 +28,5 @@ export async function getGitHubContributionsCompany() {
     }
   );
   const data = (await res.json()) as GitHubContributionsResponseCompany;
-  return data.contributions;
+  return getLast365Days(data.contributions);
 }
