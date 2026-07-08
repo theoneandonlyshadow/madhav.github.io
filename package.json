@@ -72,6 +72,7 @@
     "zod": "^3.25.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260708.1",
     "@eslint/eslintrc": "^3.3.0",
     "@tailwindcss/postcss": "^4.1.16",
     "@tailwindcss/typography": "^0.5.16",
