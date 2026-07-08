@@ -21,10 +21,10 @@
     "url": "git+https://github.com/theoneandonlyshadow/madhav.com.git"
   },
   "scripts": {
-    "dev": "next dev -p 7007",
     "build": "next build",
+    "dev": "next dev -p 7007",
     "start": "next start",
-    "preview": "next build && next start -p 7007",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "check-types": "tsc --noEmit --pretty",
@@ -33,13 +33,17 @@
     "capture": "tsx --tsconfig ./tsconfig.scripts.json ./src/scripts/capture.mts",
     "upgrade:next": "pnpm dlx @next/codemod@latest upgrade latest",
     "upgrade:tailwind": "pnpm dlx @tailwindcss/upgrade@latest",
-    "prepare": "husky"
+    "prepare": "husky",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
     "@hookform/resolvers": "^4.1.0",
     "@ncdai/react-wheel-picker": "^1.0.18",
     "@next/third-parties": "^16.1.1",
+    "@opennextjs/cloudflare": "^1.20.1",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "class-variance-authority": "^0.7.1",
@@ -106,7 +110,8 @@
     "tw-animate-css": "^1.3.4",
     "typescript": "5.8.3",
     "unist-builder": "3.0.0",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.0.0",
+    "wrangler": "^4.108.0"
   },
   "resolutions": {
     "@types/react": "19.2.2",
