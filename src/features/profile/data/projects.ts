@@ -40,6 +40,25 @@ export const PROJECTS: Project[] = [
     isExpanded: true,
   },
   {
+    id: "poison",
+    title: "MaxTac's Poison",
+    period: {
+      start: "08.2026",
+    },
+    link: "https://github.com/M4XT4C/poison",
+    skills: [
+      "IOT",
+      "Microcontroller",
+      "ESP32-S3",
+      "C++",
+      "USB-HID",
+    ],
+    description: `idea of this Poison turns an ESP32-S3-N16R8 into a tool that lets you send keystrokes (individual keys, combinations, numbers, func keys, super key, etc) and mouse (d-pad with fuckin scroll wheel), media keys (vol up/down, etc) if you can plug it in. supported targets: android, ios, windows and linux based oses..
+`,
+    logo: "",
+    isExpanded: true,
+  },
+  {
     id: "vermilion",
     title: "Vermilion AI",
     period: {
@@ -76,6 +95,7 @@ export const PROJECTS: Project[] = [
     description: `Cutting edge UI made with Launch UI, ShadCN and Aceternity UI. Made it for a friend. Development kept on hold due to inadequate drone data.
 - Showcases military grade drones.`,
     logo: "https://ik.imagekit.io/rwjhjllft/usasianaeroservices?updatedAt=1762454558266",
+    isExpanded: flase,
   },
   {
     id: "xpr",
