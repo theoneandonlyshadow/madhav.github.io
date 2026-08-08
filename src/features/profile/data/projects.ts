@@ -95,7 +95,7 @@ export const PROJECTS: Project[] = [
     description: `Cutting edge UI made with Launch UI, ShadCN and Aceternity UI. Made it for a friend. Development kept on hold due to inadequate drone data.
 - Showcases military grade drones.`,
     logo: "https://ik.imagekit.io/rwjhjllft/usasianaeroservices?updatedAt=1762454558266",
-    isExpanded: flase,
+    isExpanded: false,
   },
   {
     id: "xpr",
