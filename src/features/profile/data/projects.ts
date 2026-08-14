@@ -55,7 +55,7 @@ export const PROJECTS: Project[] = [
     ],
     description: `idea of this Poison turns an ESP32-S3-N16R8 into a tool that lets you send keystrokes (individual keys, combinations, numbers, func keys, super key, etc) and mouse (d-pad with fuckin scroll wheel), media keys (vol up/down, etc) if you can plug it in. supported targets: android, ios, windows and linux based oses..
 `,
-    logo: "",
+    logo: "https://ik.imagekit.io/rwjhjllft/usasianaeroservices?updatedAt=1762454558266",
     isExpanded: true,
   },
   {
