@@ -28,16 +28,17 @@ export const USER: User = {
     },
   ],
   about: `
-I'm Madhav Nair — Associate Software Engineer @ Aimver
+I'm Madhav Nair — Associate Software Engineer @ Aimver Technologies
 
-I build full-stack products across TypeScript, Next.js, PostgreSQL, and cloud that stay fast no matter how hard you push them.
-The stuff I ship ends up in real user's hands, so polish and stability actually matter.
-From UI craft to infra wiring, I keep the entire stack tight.
-I built internal tools, backend services, and my own projects since 11th grade.
-I have worked under pressure so deadlines don't scare me.
-Production quality is the bar, not the goal.
+I build shit I want to exist.
 
-Drop a hi in my email. I respond quick.
+I like making things, solving hard problems (incl. the ones i create), and going way too deep into stuff that catches my interest.
+
+Most days, I'm either building something new or wondering how the hell something works. You WILL catch me hating on Microsoft.
+
+Still learning. Still shipping. Still breaking prod.
+
+🤙
   `,
   avatar: "https://ik.imagekit.io/rwjhjllft/avatar.jpg",
   ogImage: "https://ik.imagekit.io/rwjhjllft/ogImage.png",
