@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
     id: "poison",
     title: "MaxTac's Poison",
     period: {
-      start: "08.2026",
+      start: "06.2026",
     },
     link: "https://github.com/M4XT4C/poison",
     skills: [
@@ -55,6 +55,24 @@ export const PROJECTS: Project[] = [
     ],
     description: `idea of this Poison turns an ESP32-S3-N16R8 into a tool that lets you send keystrokes (individual keys, combinations, numbers, func keys, super key, etc) and mouse (d-pad with fuckin scroll wheel), media keys (vol up/down, etc) if you can plug it in. supported targets: android, ios, windows and linux based oses..
 `,
+    logo: "https://ik.imagekit.io/rwjhjllft/usasianaeroservices?updatedAt=1762454558266",
+    isExpanded: true,
+  },
+  {
+    id: "USAA_Command_Panel",
+    title: "USAA Command Panel",
+    period: {
+      start: "09.2026",
+    },
+    link: "#",
+    skills: [
+      "Wails",
+      "Go",
+      "React.js",
+      "Algorithms",
+      "C++",
+    ],
+    description: `View a drone's GPS/GNSS location, manipulate flight controls, view camera feed, monitor health and many more in a desktop app.`,
     logo: "https://ik.imagekit.io/rwjhjllft/usasianaeroservices?updatedAt=1762454558266",
     isExpanded: true,
   },
@@ -94,7 +112,7 @@ export const PROJECTS: Project[] = [
     skills: ["Freelance"],
     description: `Cutting edge UI made with Launch UI, ShadCN and Aceternity UI. Made it for a friend. Development kept on hold due to inadequate drone data.
 - Showcases military grade drones.`,
-    logo: "https://ik.imagekit.io/rwjhjllft/usasianaeroservices?updatedAt=1762454558266",
+    logo: "https://ik.imagekit.io/rwjhjllft/usasianaeroservices",
   },
   {
     id: "xpr",

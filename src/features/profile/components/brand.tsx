@@ -25,7 +25,7 @@ export function Brand() {
           </div>
 
           <div className="screen-line-after flex items-center justify-center pr-8 after:z-1">
-            <MadhavMark className="h-8 w-auto sm:h-12" />
+            <MadhavMark className="h-8 w-auto sm:h-12 dark:invert-0 invert-100" />
           </div>
 
           {/* <div className="flex h-28 items-center justify-center border-r border-dashed border-edge bg-background">

@@ -34,7 +34,7 @@ export function SiteFooter() {
         </p>
 
         <div className="screen-line-before screen-line-after flex w-full before:z-1 after:z-1">
-          <div className="mx-auto flex items-center justify-center gap-3 border-x border-red-900 bg-background px-4">
+          <div className="mx-auto flex items-center justify-center gap-3 border-x dark:border-cyan-950 bg-background px-4">
             {/* <Link
               className="flex font-mono text-xs font-medium text-muted-foreground"
               href={'https://cronen.madhavn.com'}
